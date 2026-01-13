@@ -4,6 +4,8 @@
 
 :material-menu-open: **Visualization  → Interactive ion identity molecular networks**
 
+![Interactive network visualizer dashboard](network_dashboard.png)
+
 [Molecular Networking](../../module_docs/group_spectral_net/molecular_networking.md) is available in mzmine or through other tools (GNPS, matchms) and connects mass spectra of molecules based on the similarity of their fragmentation patterns. However, during ionization, molecules commonly form multiple ion species with different fragmentation behavior. As a result, the fragmentation spectra of these ion species often remain unconnected in tandem mass spectrometry-based molecular networks, leading to redundant and disconnected sub-networks of the same compound classes. 
 
 To overcome this bottleneck, MZmine employes **Ion Identity Molecular Networking (IIMN)** module. This module unites chromatographic peak shape correlation analysis with molecular networks, which is able to connect and collapse different ion species of the same molecule. This feature relationships improve network connectivity for structurally related molecules.

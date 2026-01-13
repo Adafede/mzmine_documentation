@@ -36,6 +36,8 @@ A recent mzmine introduction video:
 
 [![Youtube channel](Youtube_tutorials.png)](https://www.youtube.com/watch?v=UnqVtZngzl0&list=PL7kvpfzg8JkVGjhiGty5p-IDXgP9APx3b&index=1){target="_blank"}
 
+[![Interactive networking](visualization_modules/interactive_ion_id_netw/network_dashboard.png)](visualization_modules/interactive_ion_id_netw/interactive_ion_id_netw.md)
+
 ---
 
 ## mzmine news
