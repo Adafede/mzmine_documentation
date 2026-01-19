@@ -23,9 +23,8 @@ the mzmine graphical user interface or using the _Import MS data_ module.
     
     Some vendor data formats are **only supported** on specific **operating systems** due to the limited 
     support by their respective data access libraries. All data formats are supported on Windows 
-    and many on Linux (see full [compatibility list here](system_requirements.md#compatibility)).
-    Many data formats are unsupported on macOS, requiring data conversion to open formats, usually
-    on a Windows or Linux computer.
+    and many on Linux. To process unsupported formats on Linux or MacOS use 
+    [MSConvert](#msconvert-proteowizard-to-mzml) on a Windows computer.
 
 ## External dependencies
 
@@ -58,6 +57,8 @@ If you want to convert the files yourself, see the sections below.
 
 
 ### MSConvert (ProteoWizard) to mzML
+
+Download: https://proteowizard.sourceforge.io/download.html
 
 !!! info
 

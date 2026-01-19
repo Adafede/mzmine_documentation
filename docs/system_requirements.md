@@ -64,33 +64,4 @@ for spectral networking using MS2Deepscore and DReaMS, an internet connection is
 
 ## Operating system compatibility {#compatibility}
 
-### Windows
-
-Currently, all modules are compatible with Microsoft Windows 10 and higher.
-
-Some libraries for the raw data support for vendor-specific formats are only available for Windows.
-Read more about data support and [data conversion](data_conversion.md).
-
-### Linux
-
-Some libraries for the raw data support for vendor-specific formats are only available for Windows. 
-
-The Linux version **supports** raw data formats from:
-
-- **Thermo**, **Bruker**, **Waters**
-
-Data from other Vendors may need to be **converted** to the open .mzML format before, including:
-
-- **Agilent**, **Sciex**, **Shimadzu**, **MOBILion**
-
-### macOS
-
-Some libraries for the raw data support for vendor-specific formats are only available for Windows and Linux. 
-
-The macOS version **supports** raw data formats from:
-
-- Thermo
-
-Data from other Vendors may need to be **converted** to the open .mzML format before, including:
-
-- Agilent, Sciex, Shimadzu, MOBILion, Bruker, Waters
+An up-to-date list of supported data formats on each operating system is available [here](data_conversion.md).
