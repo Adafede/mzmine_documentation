@@ -3,27 +3,28 @@
 mzmine supports both **open** (e.g., .mzML, .mzXML, .imzML, .netCDF) and many **proprietary** 
 vendor data formats. For many vendor formats it is recommended to use the original data files and 
 to only apply conversion where needed. Data files can be imported by drag-and-dropping files into 
-the mzmine graphical user interface or using the _import MS data_ module. 
+the mzmine graphical user interface or using the _Import MS data_ module. 
 
 **Supported raw data formats include:**
 
-- Bruker Daltonics (.d and .tdf/tsf) 
-- Thermo Fisher (.raw)
-- Waters (.raw folders)
-- Agilent (.d)
-- Sciex (.wiff/.wiff2)
-- Shimadzu (.lcd)
-- MOBILion (.mbi)
-- mzML or mzXML/mzData/netCDF (prefer mzML if possible due to better metadata coverage)
-- imzML (MS imaging)
+| Data format                        | Windows | Linux | Mac |
+|------------------------------------|---------|-------|-----|
+| mzML, mzXML, netCDF, imzML, mzData | ✓       | ✓     | ✓   |
+| Thermo (.raw)                      | ✓       | ✓     | ✓   |
+| Bruker (.d/.tdf, .d/.tsf, .d/.baf) | ✓       | ✓     |     |
+| Waters (.raw)                      | ✓       | ✓     |     |
+| Agilent (.d)                       | ✓ (\*)  |       |     |
+| SCIEX (.wiff/.wiff2)               | ✓ (\*)  |       |     |
+| MOBILion (.mbi)                    | ✓ (\*)  |       |     |
+| Shimadzu (.lcd)                    | ✓ (\*)  |       |     |
+\* via [MSConvert](https://proteowizard.sourceforge.io/download.html)
 
 !!! warning
     
     Some vendor data formats are **only supported** on specific **operating systems** due to the limited 
     support by their respective data access libraries. All data formats are supported on Windows 
-    and many on Linux (see full [compatibility list here](system_requirements.md#compatibility)).
-    Many data formats are unsupported on macOS, requiring data conversion to open formats, usually
-    on a Windows or Linux computer.
+    and many on Linux. To process unsupported formats on Linux or MacOS use 
+    [MSConvert](#msconvert-proteowizard-to-mzml) on a Windows computer.
 
 ## External dependencies
 
@@ -41,6 +42,8 @@ currently require MSConvert for direct support include:
 - Shimadzu (.lcd)
 - MOBILion (.mbi)
 
+Download: https://proteowizard.sourceforge.io/download.html
+
 ## Data conversion to open formats (.mzML / .imzML)
 
 When converting data, prefer the latest standard formats mzML (or imzML for MS imaging data).
@@ -54,6 +57,8 @@ If you want to convert the files yourself, see the sections below.
 
 
 ### MSConvert (ProteoWizard) to mzML
+
+Download: https://proteowizard.sourceforge.io/download.html
 
 !!! info
 
