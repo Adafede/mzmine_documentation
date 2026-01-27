@@ -41,9 +41,8 @@ community guidelines. mzmine supports ranking of annotations based on
 <!-- markdown-link-check-disable-next-line -->
 the [MSI](https://link.springer.com/article/10.1007/s11306-007-0082-2) minimum reporting standards,
 <!-- markdown-link-check-disable-next-line -->
-the [Schymanski](https://pubs.acs.org/doi/10.1021/es5002105) scale and
+the [Schymanski et. al.](https://pubs.acs.org/doi/10.1021/es5002105) scale and
 default [mzmine](#default-annotation-ranking-in-mzmine) sorting.
-
 
 ### Ranking according to MSI scale
 
@@ -63,7 +62,7 @@ annotations with MS2 information, Compound database matches with m/z **and** RT 
 same laboratory. This annotation level is not achieved in mzmine, as it would require
 differentiation between lab-internal and lab-external RT and RI measurements.
 
-### Ranking according to Schymanski scale
+### Ranking according to Schymanski et. al. scale
 
 <!-- markdown-link-check-disable-next-line -->
 See: https://pubs.acs.org/doi/10.1021/es5002105
@@ -91,7 +90,7 @@ matching. This is done because this lowers false positive molecular species leve
 prefers species level annotations, if diagnostic fragments of multiple molecular species are
 present.
 
-We want to point out that we neither prefer or disregard the MSI or Schymanski scale, but believe
-the more granular approach of the Schymanski scale allows a more intuitive ranking when sorting the
-feature table by annotation confidence.
+We want to point out that we neither prefer or disregard the MSI or Schymanski et. al. scale, but
+believe the more granular approach of the Schymanski et. al. scale allows a more intuitive user
+experience when sorting the feature table by annotation confidence.
 
