@@ -40,8 +40,10 @@ annotations, and lipid annotations. The most confident annotation is chosen acco
 community guidelines. mzmine supports ranking of annotations based on
 <!-- markdown-link-check-disable-next-line -->
 the [MSI](https://link.springer.com/article/10.1007/s11306-007-0082-2) minimum reporting standards,
+the Exposomics annotation
 <!-- markdown-link-check-disable-next-line -->
-the [Schymanski et. al.](https://pubs.acs.org/doi/10.1021/es5002105) scale and
+levels ([Celma et. al.](https://pubs.acs.org/doi/10.1021/acs.est.0c05713), [Schymanski et. al.](https://pubs.acs.org/doi/10.1021/es5002105))
+and
 default [mzmine](#default-annotation-ranking-in-mzmine) sorting.
 
 ### Ranking according to MSI scale
@@ -62,10 +64,10 @@ annotations with MS2 information, Compound database matches with m/z **and** RT 
 same laboratory. This annotation level is not achieved in mzmine, as it would require
 differentiation between lab-internal and lab-external RT and RI measurements.
 
-### Ranking according to Schymanski et. al. scale
+### Ranking according to Exposomics scale scale
 
 <!-- markdown-link-check-disable-next-line -->
-See: https://pubs.acs.org/doi/10.1021/es5002105
+See: https://pubs.acs.org/doi/10.1021/es5002105, https://pubs.acs.org/doi/10.1021/acs.est.0c05713
 
 **Level 5 - Exact mass of interest**: Not annotated, compound database annotation (m/z only, without
 isotope matching), MS1 only lipid annotation.
@@ -84,13 +86,13 @@ RT or RI matching.
 
 ### Default annotation ranking in mzmine
 
-The default sorting algorithm in mzmine is adapted from the Schymanski levels, but specifically
+The default sorting algorithm in mzmine is adapted from the Exposomics levels, but specifically
 weights a lipid annotation with diagnostic fragments higher than a spectral library match without RT
 matching. This is done because this lowers false positive molecular species level annotations and
 prefers species level annotations, if diagnostic fragments of multiple molecular species are
 present.
 
-We want to point out that we neither prefer or disregard the MSI or Schymanski et. al. scale, but
-believe the more granular approach of the Schymanski et. al. scale allows a more intuitive user
+We want to point out that we neither prefer or disregard the MSI or Exposomics scale, but
+believe the more granular approach of the Exposomics scale allows a more intuitive user
 experience when sorting the feature table by annotation confidence.
 
