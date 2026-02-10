@@ -50,7 +50,7 @@ and default [mzmine](#default-annotation-ranking-in-mzmine) sorting.
 ### Preferred annotation ranking (module)
 
 The preferred annotation ranking module allows you to modify the scoring tolerances and scoring
-weights of the [annotation quality score (AQS)](#annotation-quality-score) and the confidence
+weights of the [annotation quality summary (AQS)](#annotation-quality-summary) and the confidence
 sorting for the preferred annotations.
 ![img.png](ranking_param.png)
 
@@ -61,7 +61,7 @@ sorting for the preferred annotations.
 The m/z, RT, CCS, and RI tolerances describe the maximum permissible tolerance to achieve a match
 and thus a non-zero
 score. Larger deviations will be indicated by an orange label in
-the [AQS](#annotation-quality-score).
+the [AQS](#annotation-quality-summary).
 
 ##### Combined score weights
 
@@ -126,13 +126,13 @@ species level lipid annotation.
 **Level 1 - Confirmed structure**: Spectral library match to a reference library including
 RT or RI matching.
 
-## Annotation quality score
+## Annotation quality summary
 
-The annotation quality score (AQS) is a universal quality score available for spectral and compound
+The annotation quality summary (AQS) is a universal quality summary available for spectral and compound
 database matches and lipid annotations (since mzmine 4.9).
 
 The AQS relies on spectral match scores (MS2), isotope pattern fit (IP) and deviation of m/z, RT,
-retention index (RI), and CCS library entries. These scores may be disabled by default, e.g. no IP
+retention index (RI), and CCS library entries. These summaries may be disabled by default, e.g. no IP
 score will be displayed for GC-EI workflows, as will RI for LC-MS.
 
 An example is shown below:
