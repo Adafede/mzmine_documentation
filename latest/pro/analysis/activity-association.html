@@ -8,20 +8,24 @@
       
       
       
-        <link rel="canonical" href="https://mzmine.github.io/mzmine_documentation/latest/pro/reference/batch-diagnostics.html">
+        <link rel="canonical" href="https://mzmine.github.io/mzmine_documentation/latest/pro/analysis/activity-association.html">
       
       
+        <link rel="prev" href="study-comparison.html">
+      
+      
+        <link rel="next" href="exposure-calculation.html">
       
       
         
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
     
     
       
-        <title>Batch diagnostics: implementation reference - mzmine documentation</title>
+        <title>Activity association - mzmine documentation</title>
       
     
     
@@ -56,8 +60,6 @@
     
     
   
-    <meta name="robots" content="noindex, follow">
-  
 
   </head>
   
@@ -76,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#batch-diagnostics-implementation-reference" class="md-skip">
+        <a href="#relate-features-to-measured-activity" class="md-skip">
           Skip to content
         </a>
       
@@ -127,7 +129,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Batch diagnostics: implementation reference
+              Activity association
             
           </span>
         </div>
@@ -5774,18 +5776,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16" checked>
         
           
           <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="0">
@@ -5795,7 +5799,7 @@
   <span class="md-ellipsis">
     
   
-    Agentic workflows
+    AI-assisted mzmine
   
 
     
@@ -5806,12 +5810,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_16">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Agentic workflows
+    AI-assisted mzmine
   
 
           </label>
@@ -5831,7 +5835,7 @@
   <span class="md-ellipsis">
     
   
-    Agent-assisted mzmine
+    Overview
   
 
     
@@ -5852,6 +5856,195 @@
   
   
     <li class="md-nav__item">
+      <a href="../mzassist-setup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Set up mzassist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mzassist-data-sharing.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data sharing and agent controls
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mzassist-first-analysis.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Process your first dataset
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mzassist-methods.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Build and improve a method
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mzassist-results.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Explore and evaluate results
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_16_7" id="__nav_16_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scientific analyses
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_16_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_16_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Scientific analyses
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../scientific-analysis.html" class="md-nav__link">
         
   
@@ -5859,7 +6052,291 @@
   <span class="md-ellipsis">
     
   
-    Scientific analysis
+    Scientific analyses with mzassist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="quantification.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantification
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="batch-diagnostics.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Batch diagnostics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="study-comparison.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Study comparison
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Activity association
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="activity-association.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Activity association
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prepare-matched-measurements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What you need
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ask-mzassist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Calculate with mzassist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interpret-the-ranking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpretation
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="exposure-calculation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exposure calculation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mzassist-saving.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Save and reproduce your work
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mzassist-troubleshooting.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
   
 
     
@@ -6986,10 +7463,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#inputs-and-prerequisites" class="md-nav__link">
+  <a href="#prepare-matched-measurements" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Inputs and prerequisites
+        What you need
       
     </span>
   </a>
@@ -6997,10 +7474,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#parameters-and-validation" class="md-nav__link">
+  <a href="#ask-mzassist" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Parameters and validation
+        Calculate with mzassist
       
     </span>
   </a>
@@ -7008,74 +7485,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#processing-behavior" class="md-nav__link">
+  <a href="#interpret-the-ranking" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Processing behavior
+        Interpretation
       
     </span>
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#outputs-and-side-effects" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Outputs and side effects
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#edge-cases-and-errors" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Edge cases and errors
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#worked-examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Worked examples
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Worked examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#adjacent-blank" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Adjacent blank
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#qc-precision" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        QC precision
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -7099,30 +7515,30 @@
   
 
 
-<h1 id="batch-diagnostics-implementation-reference">Batch diagnostics: implementation reference<a class="headerlink" href="#batch-diagnostics-implementation-reference" title="Permanent link">&para;</a></h1>
-<p>This reference documents <code>batch_diagnostics</code>. See the <a href="../scientific-analysis.html">scientific-analysis overview</a>.</p>
-<div class="admonition info">
-<p class="admonition-title">MCP-only workflow entry point</p>
-<p>In the reviewed build, this workflow is initiated through the MCP local connector. Calculation
-runs locally in mzmine, and results can be opened in mzmine's native result view.</p>
-</div>
-<h2 id="inputs-and-prerequisites">Inputs and prerequisites<a class="headerlink" href="#inputs-and-prerequisites" title="Permanent link">&para;</a></h2>
-<p>Diagnostics use an approved snapshot whose result scope permits run-order sharing. <code>injection_order</code> is required, non-empty, unique <code>sN</code> IDs from that snapshot; <code>single_batch_confirmed</code> must be <code>true</code>. The default <code>abundance</code> is <code>area</code>; height and normalized fields are alternatives when available. Optional role mapping uses <code>qc</code>, <code>blank</code>, <code>sample</code>, or <code>standard</code>.</p>
-<h2 id="parameters-and-validation">Parameters and validation<a class="headerlink" href="#parameters-and-validation" title="Permanent link">&para;</a></h2>
-<p><code>qc_sample_ids</code> defaults to all ordered samples explicitly mapped as <code>qc</code>; it must uniquely select ordered samples. Each <code>reference_rows</code> entry identifies an approved row and may provide expected RT, m/z, response, and <code>internal_standard</code>. Duplicate or unknown reference rows fail. Thresholds are optional non-negative <code>max_qc_cv</code>, <code>max_rt_shift_minutes</code>, <code>max_mass_error_ppm</code>, <code>carryover_fraction</code>, and <code>max_internal_standard_deviation_fraction</code>; omission is not a pass criterion.</p>
-<p><code>complete_sequence_confirmed</code> enables carryover assessment. <code>internal_standard_amounts_comparable</code> enables internal-standard deviation assessment. Both default false.</p>
-<h2 id="processing-behavior">Processing behavior<a class="headerlink" href="#processing-behavior" title="Permanent link">&para;</a></h2>
-<p>QC CV is calculated per feature from explicitly selected QC measurements; only detected/manual finite values contribute, so imputed or aggregated values cannot improve precision. RT shift is observed RT minus supplied expected RT; mass error is <code>(observed m/z − expected m/z) / expected m/z × 1,000,000</code> ppm. For an internal-standard reference, the target is supplied <code>expected_response</code> or the median positive usable response across selected injections; relative deviation is <code>(response−target)/target</code>.</p>
-<p>Carryover is checked only for a blank immediately after a <code>sample</code>, <code>standard</code>, or <code>qc</code> in the supplied order. If both usable signals exist and preceding signal is positive, its fraction is <code>blank / preceding</code>; it is reported only when strictly greater than <code>carryover_fraction</code>.</p>
-<h2 id="outputs-and-side-effects">Outputs and side effects<a class="headerlink" href="#outputs-and-side-effects" title="Permanent link">&para;</a></h2>
-<p>The result records the explicit injection order, roles, value unit, no automatic correction and no automatic acceptance decision. Every sample has missing-feature count and, for referenced IS rows, response, target, relative deviation and flags. Every feature has QC CV/counts, reference measurements and flags, plus carryover status/events. No data are corrected or changed.</p>
-<h2 id="edge-cases-and-errors">Edge cases and errors<a class="headerlink" href="#edge-cases-and-errors" title="Permanent link">&para;</a></h2>
-<p>Fewer than two QCs produce a warning and unavailable/descriptive QC CV. Without complete-sequence confirmation carryover is <code>sequence_completeness_unconfirmed</code>; without a carryover threshold it is <code>not_requested</code>. Missing reference RT/m/z produces measurement-unavailable flags only when that expected value was supplied. Flags mean inspection evidence, not a release decision or proof of instrument failure.</p>
-<h2 id="worked-examples">Worked examples<a class="headerlink" href="#worked-examples" title="Permanent link">&para;</a></h2>
-<h3 id="adjacent-blank">Adjacent blank<a class="headerlink" href="#adjacent-blank" title="Permanent link">&para;</a></h3>
-<p>For order <code>s1,s2</code>, roles <code>sample,blank</code>, areas 100 and 2, and <code>carryover_fraction: 0.01</code>, the event fraction is 0.02 and is flagged. Reversing the order or not confirming a complete sequence prevents that assessment.</p>
-<h3 id="qc-precision">QC precision<a class="headerlink" href="#qc-precision" title="Permanent link">&para;</a></h3>
-<p>Two detected QC values allow a feature QC CV. A third estimated or aggregated value does not increase the detected count used for that precision summary; a configured maximum flags an unavailable or over-threshold CV.</p>
+<h1 id="relate-features-to-measured-activity">Activity association<a class="headerlink" href="#relate-features-to-measured-activity" title="Permanent link">&para;</a></h1>
+<p>Activity association prioritizes features whose abundance covaries with an assay measurement, for example across fractions. An association is a lead for follow-up; it does not identify an active compound or establish a biological mechanism.</p>
+<h2 id="prepare-matched-measurements">What you need<a class="headerlink" href="#prepare-matched-measurements" title="Permanent link">&para;</a></h2>
+<p>Assay measurements must be mapped to samples in the shared feature table, with condition and independent unit identified for each sample. One analysis uses one assay endpoint, dose, context, and direction; measurements from different assays or doses need separate analyses.</p>
+<p>The activity direction states whether higher or lower assay values mean greater activity. For example, viability and inhibition endpoints can have opposite directions. Choose raw area, height, an existing normalized measurement, or a compatible quantification result.</p>
+<p>At least three independent units with both assay and feature measurements are needed for a correlation. Repeat measurements within a unit are averaged before pairing. Missing values do not become zero, and repeat injections do not increase the independent-unit count. This calculation does not offer the study-comparison log2 transformation option.</p>
+<p>By default, mzassist excludes <strong>ESTIMATED</strong> feature values and surrogate-reference-equivalent quantities from an activity association. You can explicitly request their inclusion when justified. Values marked invalid, excluded, or outside their calibration range remain unavailable.</p>
+<h2 id="ask-mzassist">Calculate with mzassist<a class="headerlink" href="#ask-mzassist" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Ask mzassist to associate feature measurements with the assay. For example:</p>
+<blockquote>
+<p>Associate the selected feature measurements with this assay endpoint across the mapped samples. Show the sample mapping, independent-unit counts, and activity direction. Explain whether Pearson or Spearman correlation matches the question before calculating.</p>
+</blockquote>
+</li>
+<li>
+<p>mzassist checks the metadata you approved for sharing. Provide only the assay, sample, and study-design facts it still needs. If needed, edit metadata under <strong>Project → Sample metadata</strong>; see <a href="../../module_docs/project_metadata/project_metadata.html">Sample metadata</a>.</p>
+</li>
+<li>Confirm the proposed mapping and calculation in chat, particularly where a sample has multiple assay measurements. Ask mzassist to calculate and open the results.</li>
+<li>Inspect paired values, correlation, matched-unit count, and priority score. The score's sign follows the declared activity direction. Inspect observations and influential points, chromatograms, spectral evidence, and correlated or coeluting features before choosing candidates.</li>
+<li>Use <strong>Save table (CSV)</strong> and <strong>Save calculation record (JSON)</strong> in the result view, preserving the endpoint, dose, context, direction, mapping, and measurement choice. See <a href="../mzassist-saving.html">Save and reproduce your work</a>.</li>
+</ol>
+<h2 id="interpret-the-ranking">Interpretation<a class="headerlink" href="#interpret-the-ranking" title="Permanent link">&para;</a></h2>
+<p>Constant values or too few matched units do not yield a usable correlation. A confidence interval is available only for qualifying Pearson results; the calculation does not report a p value.</p>
 <p><span class='git-page-authors git-authors'><a href='mailto:jonas.luebke@mzio.io'>Jonas Lübke</a></span></p>
 
 
@@ -7144,7 +7560,7 @@ runs locally in mzmine, and results can be opened in mzmine's native result view
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="October 28, 2026 07:29:31 UTC">October 28, 2026 07:29:31</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="November 11, 2026 16:01:24 UTC">November 11, 2026 16:01:24</span>
   </span>
 
     
@@ -7216,7 +7632,7 @@ runs locally in mzmine, and results can be opened in mzmine's native result view
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "default": "latest", "provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      <script src="../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
         <script src="../../javascripts/mathjax.js"></script>
       

@@ -8,20 +8,24 @@
       
       
       
-        <link rel="canonical" href="https://mzmine.github.io/mzmine_documentation/latest/pro/reference/quantification.html">
+        <link rel="canonical" href="https://mzmine.github.io/mzmine_documentation/latest/pro/analysis/quantification.html">
       
       
+        <link rel="prev" href="../scientific-analysis.html">
+      
+      
+        <link rel="next" href="batch-diagnostics.html">
       
       
         
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
     
     
       
-        <title>Quantification: implementation reference - mzmine documentation</title>
+        <title>Quantification - mzmine documentation</title>
       
     
     
@@ -56,8 +60,6 @@
     
     
   
-    <meta name="robots" content="noindex, follow">
-  
 
   </head>
   
@@ -76,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#quantification-implementation-reference" class="md-skip">
+        <a href="#quantify-selected-features" class="md-skip">
           Skip to content
         </a>
       
@@ -127,7 +129,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Quantification: implementation reference
+              Quantification
             
           </span>
         </div>
@@ -5774,18 +5776,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16" checked>
         
           
           <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="0">
@@ -5795,7 +5799,7 @@
   <span class="md-ellipsis">
     
   
-    Agentic workflows
+    AI-assisted mzmine
   
 
     
@@ -5806,12 +5810,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_16">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Agentic workflows
+    AI-assisted mzmine
   
 
           </label>
@@ -5831,7 +5835,7 @@
   <span class="md-ellipsis">
     
   
-    Agent-assisted mzmine
+    Overview
   
 
     
@@ -5852,6 +5856,195 @@
   
   
     <li class="md-nav__item">
+      <a href="../mzassist-setup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Set up mzassist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mzassist-data-sharing.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data sharing and agent controls
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mzassist-first-analysis.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Process your first dataset
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mzassist-methods.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Build and improve a method
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mzassist-results.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Explore and evaluate results
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_16_7" id="__nav_16_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scientific analyses
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_16_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_16_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Scientific analyses
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../scientific-analysis.html" class="md-nav__link">
         
   
@@ -5859,7 +6052,291 @@
   <span class="md-ellipsis">
     
   
-    Scientific analysis
+    Scientific analyses with mzassist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantification
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="quantification.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantification
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prepare-the-calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What you need
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ask-mzassist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Calculate with mzassist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#review-and-save-the-result" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpretation
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="batch-diagnostics.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Batch diagnostics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="study-comparison.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Study comparison
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="activity-association.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Activity association
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="exposure-calculation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exposure calculation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mzassist-saving.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Save and reproduce your work
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mzassist-troubleshooting.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
   
 
     
@@ -6986,10 +7463,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#inputs-and-prerequisites" class="md-nav__link">
+  <a href="#prepare-the-calibration" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Inputs and prerequisites
+        What you need
       
     </span>
   </a>
@@ -6997,10 +7474,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#parameters-and-validation" class="md-nav__link">
+  <a href="#ask-mzassist" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Parameters and validation
+        Calculate with mzassist
       
     </span>
   </a>
@@ -7008,102 +7485,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#processing-behavior" class="md-nav__link">
+  <a href="#review-and-save-the-result" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Processing behavior
+        Interpretation
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Processing behavior">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#calibration-and-estimates" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Calibration and estimates
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#missingness-and-corrections" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Missingness and corrections
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#outputs-and-side-effects" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Outputs and side effects
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#edge-cases-and-errors" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Edge cases and errors
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#worked-examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Worked examples
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Worked examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#external-curve-with-a-zero-standard" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        External curve with a zero standard
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#internal-standard-unknown" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Internal-standard unknown
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -7127,34 +7515,88 @@
   
 
 
-<h1 id="quantification-implementation-reference">Quantification: implementation reference<a class="headerlink" href="#quantification-implementation-reference" title="Permanent link">&para;</a></h1>
-<p>This reference documents the <code>quantification</code> operation. See the <a href="../scientific-analysis.html">scientific-analysis overview</a> for scope and workflow.</p>
-<div class="admonition info">
-<p class="admonition-title">MCP-only workflow entry point</p>
-<p>In the reviewed build, this workflow is initiated through the MCP local connector. Calculation
-runs locally in mzmine, and results can be opened in mzmine's native result view.</p>
-</div>
-<h2 id="inputs-and-prerequisites">Inputs and prerequisites<a class="headerlink" href="#inputs-and-prerequisites" title="Permanent link">&para;</a></h2>
-<p>The operation reads only the approved, immutable feature-table snapshot. Required fields are <code>mode</code>, <code>signal</code>, <code>concentration_unit</code>, and a non-empty <code>analytes</code> list. <code>signal</code> is <code>area</code>, <code>height</code>, <code>normalized_area</code>, or <code>normalized_height</code>; unavailable chosen data makes the specification invalid. Each analyte has <code>row_id</code> and at least two calibration entries (<code>sample_id</code>, non-negative <code>concentration</code>). Calibrator IDs must be unique and present in the calibration row. QC IDs must likewise be unique and cannot overlap calibrators. A row outside the snapshot is returned as <code>invalid_row</code>; duplicate analyte row IDs reject the request.</p>
-<p>Modes are <code>external</code>, <code>internal_standard</code>, and <code>surrogate_reference_equivalent</code>. Internal-standard mode needs a different, present <code>internal_standard_row_id</code>; surrogate mode needs a present <code>reference_row_id</code>, positive <code>relative_response_factor</code>, and nonblank <code>relative_response_factor_source</code> for every analyte. Concentration units are <code>ng/mL</code>, <code>ug/mL</code>, <code>mg/L</code>, <code>ug/L</code>, or <code>ng/L</code>.</p>
-<h2 id="parameters-and-validation">Parameters and validation<a class="headerlink" href="#parameters-and-validation" title="Permanent link">&para;</a></h2>
-<p><code>weighting</code> defaults to <code>unweighted</code> (<code>one_over_x</code> and <code>one_over_x_squared</code> are alternatives); <code>intercept</code> defaults to <code>free</code> (<code>fixed_zero</code> is the alternative). A calibrator marked <code>excluded</code> must have <code>exclusion_reason</code>. Zero concentrations are accepted for unweighted fitting, but are rejected by 1/x and 1/x² weighting. In internal-standard mode every usable calibrator needs positive analyte and internal-standard responses and a positive IS concentration; unknowns need their own positive IS concentration, not a substituted calibrator amount.</p>
-<p>Optional <code>sample_preparation.samples.&lt;sample_id&gt;</code> accepts positive <code>dilution_factor</code>, <code>extraction_volume_ml</code>, <code>sample_mass_g</code>, <code>device_count</code>, and <code>output_unit</code>. Sample mass and device count are mutually exclusive. Either denominator requires extraction volume, and extraction volume alone is invalid; those invalid combinations return an unavailable value with invalid preparation/basis rather than a converted result. QC entries carry <code>sample_id</code>, non-negative <code>expected_concentration</code>, and optional non-negative <code>accuracy_tolerance_fraction</code>.</p>
-<h2 id="processing-behavior">Processing behavior<a class="headerlink" href="#processing-behavior" title="Permanent link">&para;</a></h2>
-<h3 id="calibration-and-estimates">Calibration and estimates<a class="headerlink" href="#calibration-and-estimates" title="Permanent link">&para;</a></h3>
-<p>The fitted response is <code>y = intercept + slope × x</code>. For external and surrogate modes, <code>x</code> is concentration and <code>y</code> is chosen signal. Internal-standard mode uses <code>x = analyte concentration / IS concentration</code> and <code>y = analyte response / IS response</code>. The least-squares fit uses weights 1, 1/x, or 1/x² and requires at least two usable, distinct x levels and a finite positive slope. A failed fit returns its availability status rather than inventing a value.</p>
-<p>An external estimate is <code>(response − intercept) / slope</code>; an internal-standard estimate multiplies that regression x by the unknown IS concentration. A surrogate estimate divides the reference-calibration result by the supplied response factor (the convention is unknown response/reference response at equal concentration). An estimate is flagged <code>outside_calibrated_range</code> if its regression x or comparable concentration is outside the fitted calibration range.</p>
-<h3 id="missingness-and-corrections">Missingness and corrections<a class="headerlink" href="#missingness-and-corrections" title="Permanent link">&para;</a></h3>
-<p>Missing/invalid responses, IS inputs, response factors, or numerical results give <code>value: null</code> with an unavailable reason. Preparation can apply dilution and convert solution concentration to mass per original sample mass or per device only when the required positive preparation values are supplied. It does not calculate LOD, LOQ, identity confirmation, acceptance criteria, or toxicity.</p>
-<h2 id="outputs-and-side-effects">Outputs and side effects<a class="headerlink" href="#outputs-and-side-effects" title="Permanent link">&para;</a></h2>
-<p>The result preserves mode, signal, weighting, intercept, canonical <code>ng/mL</code> concentration provenance, fitted coefficients, R², used/rejected calibration counts, calibration back-calculations, and rows by analyte. Each sample reports role, value, value unit/basis, status, flags and range status; QC reporting includes expected value, error and optional tolerance flag. Surrogate outputs retain <code>surrogate_reference_equivalent_estimate</code>. This operation does not alter the source table.</p>
-<h2 id="edge-cases-and-errors">Edge cases and errors<a class="headerlink" href="#edge-cases-and-errors" title="Permanent link">&para;</a></h2>
-<p>A missing IS row yields <code>missing_internal_standard_row</code>; a missing surrogate reference row yields <code>missing_reference_calibration_row</code>. The IS row cannot equal the analyte row. Unsupported signal/unit, duplicate analytes, malformed regression choices, and missing surrogate factor/source are invalid specifications. Excluded or unusable calibration points can leave fewer than two distinct usable levels.</p>
-<h2 id="worked-examples">Worked examples<a class="headerlink" href="#worked-examples" title="Permanent link">&para;</a></h2>
-<h3 id="external-curve-with-a-zero-standard">External curve with a zero standard<a class="headerlink" href="#external-curve-with-a-zero-standard" title="Permanent link">&para;</a></h3>
-<p>With <code>external</code>, <code>unweighted</code>, <code>free</code>, concentrations 0 and 10, and usable areas, both points can fit. Changing to <code>one_over_x</code> rejects the zero-concentration point; the curve is unavailable if that leaves fewer than two distinct x levels.</p>
-<h3 id="internal-standard-unknown">Internal-standard unknown<a class="headerlink" href="#internal-standard-unknown" title="Permanent link">&para;</a></h3>
-<p>For <code>internal_standard</code>, a calibrator at analyte/IS concentrations 10/10 uses x=1 and its response ratio as y. An unknown with response ratio 2 has regression x <code>(2−intercept)/slope</code>; multiplying by its explicitly supplied 8 ng/mL IS concentration yields the reported analyte concentration. Omit that 8 ng/mL input and the sample is unavailable rather than using 10 ng/mL.</p>
+<h1 id="quantify-selected-features">Quantification<a class="headerlink" href="#quantify-selected-features" title="Permanent link">&para;</a></h1>
+<p>Quantification converts feature responses into concentrations using a stated calibration. Start with a processed feature table and review chromatograms and assignments for the features you want to quantify.</p>
+<h2 id="prepare-the-calibration">What you need<a class="headerlink" href="#prepare-the-calibration" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Calibration</th>
+<th>Information needed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>External</td>
+<td>Analyte feature row, calibrator samples, and concentrations with units</td>
+</tr>
+<tr>
+<td>Internal standard</td>
+<td>Analyte and internal-standard rows, calibrator concentrations, and internal-standard concentration for each calibrator, independent QC, and unknown</td>
+</tr>
+<tr>
+<td>Surrogate-reference-equivalent</td>
+<td>Reference-standard row and calibration, plus a positive relative response factor and its source for each analyte</td>
+</tr>
+</tbody>
+</table>
+<p>The response can be raw area, raw height, or an existing normalized measurement. The calibration needs at least two distinct concentrations. Regression can be unweighted, 1/x, or 1/x², with the intercept fitted or fixed at zero. mzassist helps you review these choices before calculating. Zero-concentration points cannot be used with 1/x or 1/x² weighting. A fitted line alone does not establish that a calibration is suitable.</p>
+<p>Independent QC samples with expected concentrations can assess recovery. Calibrator and QC assignments must be distinct; every remaining sample is treated as an unknown. Exclusions and preparation details such as dilution, extraction volume, sample mass, or device count belong to this quantification setup when they are needed to express the final quantity. A generic metadata column does not automatically configure calibration. Internal-standard concentrations must be supplied for calibrators, independent QCs, and unknowns; mzmine does not substitute the calibrator amount.</p>
+<p>For the calibration and reported sample concentration, mzmine uses only detected or manually integrated measurements that are unflagged, finite, and non-negative. Gap-filled (<strong>ESTIMATED</strong>) responses are unavailable for calibrators, independent QCs, and unknowns. Other measurements can still be shown for inspection, but they are not used to fit the calibration or calculate a concentration.</p>
+<p>For example, this <strong>illustrative input table</strong> shows the information for an external calibration:</p>
+<table>
+<thead>
+<tr>
+<th>Sample</th>
+<th>Use</th>
+<th>Concentration (µg/L)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cal-1</td>
+<td>Calibrator</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Cal-5</td>
+<td>Calibrator</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Cal-10</td>
+<td>Calibrator</td>
+<td>10</td>
+</tr>
+<tr>
+<td>QC-check</td>
+<td>Independent QC</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Unknown-1</td>
+<td>Unknown</td>
+<td>Not supplied</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ask-mzassist">Calculate with mzassist<a class="headerlink" href="#ask-mzassist" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Ask mzassist to quantify the selected features. For example:</p>
+<blockquote>
+<p>Quantify the selected analyte using external calibration and raw peak area. Show me the sample mapping, regression choices, units, and preparation corrections before calculating.</p>
+</blockquote>
+</li>
+<li>
+<p>mzassist checks the metadata you approved for sharing. Provide only the calibration, QC, and sample-preparation facts it still needs. If needed, sample metadata can also be edited under <strong>Project → Sample metadata</strong>; see <a href="../../module_docs/project_metadata/project_metadata.html">Sample metadata</a>.</p>
+</li>
+<li>Confirm the proposed feature and sample mapping and calculation choices in chat, then ask mzassist to calculate and open the results.</li>
+<li>Inspect the calibration curve, residuals, back-calculated concentrations, excluded calibrators, QC results, and unknowns outside the calibrated range. Check dilution and unit conversions against the sample preparation. Missing or invalid results remain unavailable.</li>
+<li>Use <strong>Save table (CSV)</strong> and <strong>Save calculation record (JSON)</strong> in the result view. See <a href="../mzassist-saving.html">Save and reproduce your work</a>.</li>
+</ol>
+<h2 id="review-and-save-the-result">Interpretation<a class="headerlink" href="#review-and-save-the-result" title="Permanent link">&para;</a></h2>
+<p>Quantification retains individual sample estimates; it does not automatically average technical replicates into independent samples. Surrogate-reference-equivalent values remain labelled as estimates. The calculation does not establish LOD/LOQ, compound identity, or method acceptance. To compare quantified results between conditions, see <a href="study-comparison.html">Study comparison</a> and identify the independent samples.</p>
 <p><span class='git-page-authors git-authors'><a href='mailto:jonas.luebke@mzio.io'>Jonas Lübke</a></span></p>
 
 
@@ -7176,7 +7618,7 @@ runs locally in mzmine, and results can be opened in mzmine's native result view
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="October 28, 2026 07:29:31 UTC">October 28, 2026 07:29:31</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="November 11, 2026 16:01:24 UTC">November 11, 2026 16:01:24</span>
   </span>
 
     
@@ -7248,7 +7690,7 @@ runs locally in mzmine, and results can be opened in mzmine's native result view
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "default": "latest", "provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      <script src="../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
         <script src="../../javascripts/mathjax.js"></script>
       

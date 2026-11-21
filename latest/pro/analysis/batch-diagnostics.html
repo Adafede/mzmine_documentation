@@ -8,20 +8,24 @@
       
       
       
-        <link rel="canonical" href="https://mzmine.github.io/mzmine_documentation/latest/pro/reference/native-analysis-tools.html">
+        <link rel="canonical" href="https://mzmine.github.io/mzmine_documentation/latest/pro/analysis/batch-diagnostics.html">
       
       
+        <link rel="prev" href="quantification.html">
+      
+      
+        <link rel="next" href="study-comparison.html">
       
       
         
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
     
     
       
-        <title>Native analysis tools: implementation reference - mzmine documentation</title>
+        <title>Batch diagnostics - mzmine documentation</title>
       
     
     
@@ -56,8 +60,6 @@
     
     
   
-    <meta name="robots" content="noindex, follow">
-  
 
   </head>
   
@@ -76,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#native-analysis-tools-implementation-reference" class="md-skip">
+        <a href="#check-an-analytical-batch" class="md-skip">
           Skip to content
         </a>
       
@@ -127,7 +129,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Native analysis tools: implementation reference
+              Batch diagnostics
             
           </span>
         </div>
@@ -5774,18 +5776,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16" checked>
         
           
           <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="0">
@@ -5795,7 +5799,7 @@
   <span class="md-ellipsis">
     
   
-    Agentic workflows
+    AI-assisted mzmine
   
 
     
@@ -5806,12 +5810,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_16">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Agentic workflows
+    AI-assisted mzmine
   
 
           </label>
@@ -5831,7 +5835,7 @@
   <span class="md-ellipsis">
     
   
-    Agent-assisted mzmine
+    Overview
   
 
     
@@ -5852,6 +5856,195 @@
   
   
     <li class="md-nav__item">
+      <a href="../mzassist-setup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Set up mzassist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mzassist-data-sharing.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data sharing and agent controls
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mzassist-first-analysis.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Process your first dataset
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mzassist-methods.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Build and improve a method
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mzassist-results.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Explore and evaluate results
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_16_7" id="__nav_16_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scientific analyses
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_16_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_16_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Scientific analyses
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../scientific-analysis.html" class="md-nav__link">
         
   
@@ -5859,7 +6052,291 @@
   <span class="md-ellipsis">
     
   
-    Scientific analysis
+    Scientific analyses with mzassist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="quantification.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantification
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Batch diagnostics
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="batch-diagnostics.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Batch diagnostics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prepare-the-sequence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What you need
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ask-mzassist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Calculate with mzassist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interpret-the-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpretation
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="study-comparison.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Study comparison
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="activity-association.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Activity association
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="exposure-calculation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exposure calculation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mzassist-saving.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Save and reproduce your work
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mzassist-troubleshooting.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
   
 
     
@@ -6986,10 +7463,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#inputs-and-prerequisites" class="md-nav__link">
+  <a href="#prepare-the-sequence" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Inputs and prerequisites
+        What you need
       
     </span>
   </a>
@@ -6997,10 +7474,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#parameters-and-validation" class="md-nav__link">
+  <a href="#ask-mzassist" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Parameters and validation
+        Calculate with mzassist
       
     </span>
   </a>
@@ -7008,74 +7485,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#processing-behavior" class="md-nav__link">
+  <a href="#interpret-the-output" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Processing behavior
+        Interpretation
       
     </span>
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#outputs-and-side-effects" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Outputs and side effects
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#edge-cases-and-errors" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Edge cases and errors
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#worked-examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Worked examples
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Worked examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#feature-qc-normalization" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Feature-QC normalization
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#library-generation-preparation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Library-generation preparation
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -7099,23 +7515,71 @@
   
 
 
-<h1 id="native-analysis-tools-implementation-reference">Native analysis tools: implementation reference<a class="headerlink" href="#native-analysis-tools-implementation-reference" title="Permanent link">&para;</a></h1>
-<p>This reference describes how the connector exposes native analysis tools. For analysis choices, see <a href="../scientific-analysis.html">scientific analysis</a>.</p>
-<h2 id="inputs-and-prerequisites">Inputs and prerequisites<a class="headerlink" href="#inputs-and-prerequisites" title="Permanent link">&para;</a></h2>
-<p><code>normalization</code> operates on a selected current feature table and native task controller. <code>library-search</code> uses a reviewed native configuration; <code>library-generation-preflight</code> and its settings provide data-free checks/settings review. <code>scientific-analysis</code> dispatches only from an approved result scope; individual analysis calculations are documented separately.</p>
-<h2 id="parameters-and-validation">Parameters and validation<a class="headerlink" href="#parameters-and-validation" title="Permanent link">&para;</a></h2>
-<p>Normalization accepts <code>run</code>, <code>status</code>, or <code>cancel</code>; only <code>run</code> accepts settings. Its schema exposes abundance, a suffix (maximum 256 characters), original-list handling, optional batch column, and inter-sample methods <code>no_normalization</code>, <code>feature_intensity_normalization</code>, <code>spectral_tic</code>, and <code>feature_qc</code>. Feature-intensity metric IDs are <code>median</code>, <code>sum_tic</code>, <code>average</code>, and <code>max</code>; its <code>sum_tic</code> is feature-table TIC, not spectral TIC. QC-RLSC requires at least five usable QC observations per feature/batch; fixed span must yield at least degree + 2 points.</p>
-<h2 id="processing-behavior">Processing behavior<a class="headerlink" href="#processing-behavior" title="Permanent link">&para;</a></h2>
-<p>Normalization builds and submits the ordinary native intensity-normalizer queue. A request ID is idempotent only for identical inputs. Its finished response lists native output-table references; an error reports the native task message when present. Library settings are proposal/review based: inspect is read-only, while changes are workflow mutations. Preflight checks readiness before library-generation batch preparation rather than generating a library.</p>
-<h2 id="outputs-and-side-effects">Outputs and side effects<a class="headerlink" href="#outputs-and-side-effects" title="Permanent link">&para;</a></h2>
-<p>Normalization produces native normalized feature-list outputs according to its native handling choice and marks changed outputs in the bridge. Library search/generation actions return review, job, or readiness state; they do not imply a validated identification. Scientific-analysis dispatch retains the approved scope and its sharing limits, so it does not automatically broaden metadata or signal access.</p>
-<h2 id="edge-cases-and-errors">Edge cases and errors<a class="headerlink" href="#edge-cases-and-errors" title="Permanent link">&para;</a></h2>
-<p>No selected table gives <code>table_unavailable</code>; incompatible active processing/project loading gives <code>processing_active</code>; unavailable native normalization gives <code>task_unavailable</code>. Invalid parameters return <code>invalid_parameters</code>, and reaching 64 retained normalization requests prevents another run; reconnect releases completed records, while active requests remain. The service blocks normalization while library search is active. Unsupported methods/metrics and unavailable or stale required context are request errors. Insufficient usable QC data is handled per feature and batch: affected normalized values are marked unavailable with diagnostics, while the overall normalization job can still finish and produce a table.</p>
-<h2 id="worked-examples">Worked examples<a class="headerlink" href="#worked-examples" title="Permanent link">&para;</a></h2>
-<h3 id="feature-qc-normalization">Feature-QC normalization<a class="headerlink" href="#feature-qc-normalization" title="Permanent link">&para;</a></h3>
-<p>Select a table with pooled QC samples, request <code>feature_qc</code> with valid QC settings, and poll the returned request ID. A feature/batch with fewer than five usable QC observations cannot meet the native minimum. Normalization can still finish, but affected normalized values are unavailable with a reason rather than substituted with raw abundance.</p>
-<h3 id="library-generation-preparation">Library-generation preparation<a class="headerlink" href="#library-generation-preparation" title="Permanent link">&para;</a></h3>
-<p>Inspect library-generation settings, request preflight, then submit reviewed settings. Preflight can identify missing required preparation, but it neither writes a library nor bypasses the native review step.</p>
+<h1 id="check-an-analytical-batch">Batch diagnostics<a class="headerlink" href="#check-an-analytical-batch" title="Permanent link">&para;</a></h1>
+<p>Batch diagnostics help you examine QC precision, reference mass and retention-time deviations, internal-standard responses, and possible carryover within one analytical batch. It highlights measurements to investigate; it does not correct data or accept or reject a batch for your laboratory.</p>
+<h2 id="prepare-the-sequence">What you need<a class="headerlink" href="#prepare-the-sequence" title="Permanent link">&para;</a></h2>
+<p>The injection order and confirmed batch membership are needed to interpret trends and carryover. Distinguish samples, QCs, blanks, and standards, and check the sequence against acquisition records: the display order of files does not establish their acquisition sequence. To assess carryover, supply a carryover threshold, confirm that the sequence is complete, and include a blank immediately after the relevant sample, standard, or QC injection. Omitted injections cannot establish adjacency.</p>
+<p>Reference checks need the relevant feature rows and expected m/z or retention time. Internal-standard response checks require comparable added amounts. Choose raw area, height, or an existing normalized measurement and provide method-specific alert criteria.</p>
+<p>This <strong>illustrative sequence</strong> supports inspection of the blank after Sample-1; it is not a recommended QC schedule or acceptance rule:</p>
+<table>
+<thead>
+<tr>
+<th>Injection order</th>
+<th>Sample</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>QC-1</td>
+<td>QC</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Sample-1</td>
+<td>Sample</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Blank-1</td>
+<td>Blank</td>
+</tr>
+<tr>
+<td>4</td>
+<td>QC-2</td>
+<td>QC</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Sample-2</td>
+<td>Sample</td>
+</tr>
+<tr>
+<td>6</td>
+<td>QC-3</td>
+<td>QC</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ask-mzassist">Calculate with mzassist<a class="headerlink" href="#ask-mzassist" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Ask mzassist to inspect the batch. For example:</p>
+<blockquote>
+<p>Inspect this single batch using the complete injection order. Report QC precision and possible carryover, and show which observations support each flag. Ask me for expected reference values or alert thresholds if needed.</p>
+</blockquote>
+</li>
+<li>
+<p>mzassist requests the metadata and result information it needs, including run order. Review that <a href="../mzassist-data-sharing.html#review-a-sharing-request">sharing request</a> and allow run timing and batch labels for this calculation. Supply any missing sequence, reference, and threshold information in chat; mzassist can help update the sample metadata. Manual editing is also available under <strong>Project → Sample metadata</strong>; see <a href="../../module_docs/project_metadata/project_metadata.html">Sample metadata</a>.</p>
+</li>
+<li>Confirm the proposed sequence, sample roles, measurement, and diagnostic choices in chat. Ask mzassist to calculate and open the results.</li>
+<li>Check which QC observations contribute to each statistic and inspect flagged chromatograms and reference assignments. Only detected or manually integrated QC observations count; missing, <strong>ESTIMATED</strong>, and aggregated signals are excluded and cannot be opted into for this calculation.</li>
+<li>Use <strong>Save table (CSV)</strong> and <strong>Save calculation record (JSON)</strong> in the result view. See <a href="../mzassist-saving.html">Save and reproduce your work</a>.</li>
+</ol>
+<h2 id="interpret-the-output">Interpretation<a class="headerlink" href="#interpret-the-output" title="Permanent link">&para;</a></h2>
+<p>A separate QC-drift request can describe abundance versus run order. It needs at least three usable QC injections and does not correct measurements. For correction, ask mzassist to help prepare a separate normalization step and inspect its output. The manual workflow is described in <a href="../../module_docs/norm_intensity/norm_intensity.html">Intensity normalizer</a>.</p>
+<p><span class='git-page-authors git-authors'><a href='mailto:jonas.luebke@mzio.io'>Jonas Lübke</a></span></p>
 
 
 
@@ -7136,7 +7600,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="October 28, 2026 07:29:31 UTC">October 28, 2026 07:29:31</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="November 11, 2026 16:01:24 UTC">November 11, 2026 16:01:24</span>
   </span>
 
     
@@ -7208,7 +7672,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "default": "latest", "provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      <script src="../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
         <script src="../../javascripts/mathjax.js"></script>
       

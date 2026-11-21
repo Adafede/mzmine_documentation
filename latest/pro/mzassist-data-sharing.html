@@ -8,27 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://mzmine.github.io/mzmine_documentation/latest/pro/reference/detector-baseline.html">
+        <link rel="canonical" href="https://mzmine.github.io/mzmine_documentation/latest/pro/mzassist-data-sharing.html">
       
       
+        <link rel="prev" href="mzassist-setup.html">
+      
+      
+        <link rel="next" href="mzassist-first-analysis.html">
       
       
         
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
     
     
       
-        <title>Other-detector baseline correction: implementation reference - mzmine documentation</title>
+        <title>Data sharing and agent controls - mzmine documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -47,16 +51,14 @@
       
     
     
-      <link rel="stylesheet" href="../../css/extra.css">
+      <link rel="stylesheet" href="../css/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
-  
-    <meta name="robots" content="noindex, follow">
   
 
   </head>
@@ -76,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#other-detector-baseline-correction-implementation-reference" class="md-skip">
+        <a href="#data-sharing-and-agent-controls" class="md-skip">
           Skip to content
         </a>
       
@@ -91,12 +93,12 @@
             <div class="md-banner__inner md-grid md-typeset">
               
   You are viewing the documentation of an mzmine release, which may be outdated.
-  <a href="../../..">
+  <a href="../..">
     <strong>Click here to go to the latest documentation.</strong>
   </a>
 
             </div>
-            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL(".."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
           </aside>
         
       </div>
@@ -108,9 +110,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../index.html" title="mzmine documentation" class="md-header__button md-logo" aria-label="mzmine documentation" data-md-component="logo">
+    <a href="../index.html" title="mzmine documentation" class="md-header__button md-logo" aria-label="mzmine documentation" data-md-component="logo">
       
-  <img src="../../img/mzmine_logo_white.png" alt="logo">
+  <img src="../img/mzmine_logo_white.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -127,7 +129,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Other-detector baseline correction: implementation reference
+              Data sharing and agent controls
             
           </span>
         </div>
@@ -217,9 +219,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="mzmine documentation" class="md-nav__button md-logo" aria-label="mzmine documentation" data-md-component="logo">
+    <a href="../index.html" title="mzmine documentation" class="md-nav__button md-logo" aria-label="mzmine documentation" data-md-component="logo">
       
-  <img src="../../img/mzmine_logo_white.png" alt="logo">
+  <img src="../img/mzmine_logo_white.png" alt="logo">
 
     </a>
     mzmine documentation
@@ -246,7 +248,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../index.html" class="md-nav__link">
+      <a href="../index.html" class="md-nav__link">
         
   
   
@@ -273,7 +275,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started.html" class="md-nav__link">
+      <a href="../getting_started.html" class="md-nav__link">
         
   
   
@@ -300,7 +302,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../services/users.html" class="md-nav__link">
+      <a href="../services/users.html" class="md-nav__link">
         
   
   
@@ -327,7 +329,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../learners_corner.html" class="md-nav__link">
+      <a href="../learners_corner.html" class="md-nav__link">
         
   
   
@@ -354,7 +356,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../main-window-overview.html" class="md-nav__link">
+      <a href="../main-window-overview.html" class="md-nav__link">
         
   
   
@@ -381,7 +383,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../wizard.html" class="md-nav__link">
+      <a href="../wizard.html" class="md-nav__link">
         
   
   
@@ -408,7 +410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../data_conversion.html" class="md-nav__link">
+      <a href="../data_conversion.html" class="md-nav__link">
         
   
   
@@ -435,7 +437,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/project_metadata/project_metadata.html" class="md-nav__link">
+      <a href="../module_docs/project_metadata/project_metadata.html" class="md-nav__link">
         
   
   
@@ -462,7 +464,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../preferences.html" class="md-nav__link">
+      <a href="../preferences.html" class="md-nav__link">
         
   
   
@@ -536,7 +538,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../performance.html" class="md-nav__link">
+      <a href="../performance.html" class="md-nav__link">
         
   
   
@@ -564,7 +566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../performance/benchmarking.html" class="md-nav__link">
+      <a href="../performance/benchmarking.html" class="md-nav__link">
         
   
   
@@ -599,7 +601,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../commandline_tool.html" class="md-nav__link">
+      <a href="../commandline_tool.html" class="md-nav__link">
         
   
   
@@ -626,7 +628,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tool_integration.html" class="md-nav__link">
+      <a href="../tool_integration.html" class="md-nav__link">
         
   
   
@@ -747,7 +749,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/io/data-import.html" class="md-nav__link">
+      <a href="../module_docs/io/data-import.html" class="md-nav__link">
         
   
   
@@ -775,7 +777,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/io/data-export.html" class="md-nav__link">
+      <a href="../module_docs/io/data-export.html" class="md-nav__link">
         
   
   
@@ -803,7 +805,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/io/feat-list-import.html" class="md-nav__link">
+      <a href="../module_docs/io/feat-list-import.html" class="md-nav__link">
         
   
   
@@ -831,7 +833,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/io/feat-list-export.html" class="md-nav__link">
+      <a href="../module_docs/io/feat-list-export.html" class="md-nav__link">
         
   
   
@@ -859,7 +861,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/project_io/project_io.html" class="md-nav__link">
+      <a href="../module_docs/project_io/project_io.html" class="md-nav__link">
         
   
   
@@ -887,7 +889,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/io/data-exchange-with-other-software.html" class="md-nav__link">
+      <a href="../module_docs/io/data-exchange-with-other-software.html" class="md-nav__link">
         
   
   
@@ -915,7 +917,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/io_spectral_library_export/spectral_library_generation.html" class="md-nav__link">
+      <a href="../module_docs/io_spectral_library_export/spectral_library_generation.html" class="md-nav__link">
         
   
   
@@ -943,7 +945,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/io_spectral_library_export/merge_libraries.html" class="md-nav__link">
+      <a href="../module_docs/io_spectral_library_export/merge_libraries.html" class="md-nav__link">
         
   
   
@@ -971,7 +973,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/io_scans_feature/export-scans-feature.html" class="md-nav__link">
+      <a href="../module_docs/io_scans_feature/export-scans-feature.html" class="md-nav__link">
         
   
   
@@ -999,7 +1001,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/io_mrmtotsv/mrm-to-tsv.html" class="md-nav__link">
+      <a href="../module_docs/io_mrmtotsv/mrm-to-tsv.html" class="md-nav__link">
         
   
   
@@ -1027,7 +1029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/io_export_feature_data/export-feature-data.html" class="md-nav__link">
+      <a href="../module_docs/io_export_feature_data/export-feature-data.html" class="md-nav__link">
         
   
   
@@ -1055,7 +1057,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/io_annotationgraphics/export_annotation_graphics.html" class="md-nav__link">
+      <a href="../module_docs/io_annotationgraphics/export_annotation_graphics.html" class="md-nav__link">
         
   
   
@@ -1083,7 +1085,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/io_export_msn_tree/msn_tree_export.html" class="md-nav__link">
+      <a href="../module_docs/io_export_msn_tree/msn_tree_export.html" class="md-nav__link">
         
   
   
@@ -1111,7 +1113,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/io_export_ccsbase/ccsbase_export.html" class="md-nav__link">
+      <a href="../module_docs/io_export_ccsbase/ccsbase_export.html" class="md-nav__link">
         
   
   
@@ -1139,7 +1141,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/io_export_library_analysis/library_analysis_csv_export.html" class="md-nav__link">
+      <a href="../module_docs/io_export_library_analysis/library_analysis_csv_export.html" class="md-nav__link">
         
   
   
@@ -1167,7 +1169,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/io_export_msmsquality/msms_quality_export.html" class="md-nav__link">
+      <a href="../module_docs/io_export_msmsquality/msms_quality_export.html" class="md-nav__link">
         
   
   
@@ -1250,7 +1252,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/featdet_file_merging/raw-files-merging.html" class="md-nav__link">
+      <a href="../module_docs/featdet_file_merging/raw-files-merging.html" class="md-nav__link">
         
   
   
@@ -1278,7 +1280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/featdet_mobility_scan_merging/mobility-scan-merging.html" class="md-nav__link">
+      <a href="../module_docs/featdet_mobility_scan_merging/mobility-scan-merging.html" class="md-nav__link">
         
   
   
@@ -1361,7 +1363,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/filter_raw_data/filter-scan-by-scan.html" class="md-nav__link">
+      <a href="../module_docs/filter_raw_data/filter-scan-by-scan.html" class="md-nav__link">
         
   
   
@@ -1389,7 +1391,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/filter_raw_data/crop-filter.html" class="md-nav__link">
+      <a href="../module_docs/filter_raw_data/crop-filter.html" class="md-nav__link">
         
   
   
@@ -1417,7 +1419,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/filter_raw_data/align-scans.html" class="md-nav__link">
+      <a href="../module_docs/filter_raw_data/align-scans.html" class="md-nav__link">
         
   
   
@@ -1445,7 +1447,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/filter_raw_data/scan_smoothing.html" class="md-nav__link">
+      <a href="../module_docs/filter_raw_data/scan_smoothing.html" class="md-nav__link">
         
   
   
@@ -1528,7 +1530,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/featdet_mass_detection/mass-detection.html" class="md-nav__link">
+      <a href="../module_docs/featdet_mass_detection/mass-detection.html" class="md-nav__link">
         
   
   
@@ -1556,7 +1558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/featdet_mass_detection/mass-detection-algorithms.html" class="md-nav__link">
+      <a href="../module_docs/featdet_mass_detection/mass-detection-algorithms.html" class="md-nav__link">
         
   
   
@@ -1584,7 +1586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/featdet_mass_detection/FTMS-shoulder-peak-filter.html" class="md-nav__link">
+      <a href="../module_docs/featdet_mass_detection/FTMS-shoulder-peak-filter.html" class="md-nav__link">
         
   
   
@@ -1612,7 +1614,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/featdet_mass_detection/mass-calibration.html" class="md-nav__link">
+      <a href="../module_docs/featdet_mass_detection/mass-calibration.html" class="md-nav__link">
         
   
   
@@ -1695,7 +1697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/lc-ms_featdet/featdet_adap_chromatogram_builder/adap-chromatogram-builder.html" class="md-nav__link">
+      <a href="../module_docs/lc-ms_featdet/featdet_adap_chromatogram_builder/adap-chromatogram-builder.html" class="md-nav__link">
         
   
   
@@ -1723,7 +1725,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/featuredet_msn_tree/msn_tree_builder.html" class="md-nav__link">
+      <a href="../module_docs/featuredet_msn_tree/msn_tree_builder.html" class="md-nav__link">
         
   
   
@@ -1751,7 +1753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/lc-ms_featdet/featdet_gridmass/gridmass.html" class="md-nav__link">
+      <a href="../module_docs/lc-ms_featdet/featdet_gridmass/gridmass.html" class="md-nav__link">
         
   
   
@@ -1779,7 +1781,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/lc-ms_featdet/targeted_featdet/targeted-featdet.html" class="md-nav__link">
+      <a href="../module_docs/lc-ms_featdet/targeted_featdet/targeted-featdet.html" class="md-nav__link">
         
   
   
@@ -1807,7 +1809,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/lc-ms_featdet/featdet_results/featdet_results.html" class="md-nav__link">
+      <a href="../module_docs/lc-ms_featdet/featdet_results/featdet_results.html" class="md-nav__link">
         
   
   
@@ -1890,7 +1892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/lc-ims-ms_featdet/featdet_ims_expander/ims-expander.html" class="md-nav__link">
+      <a href="../module_docs/lc-ims-ms_featdet/featdet_ims_expander/ims-expander.html" class="md-nav__link">
         
   
   
@@ -1918,7 +1920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/lc-ims-ms_featdet/featdet_ion_mobility_trace_builder/ion-mobility-trace-builder.html" class="md-nav__link">
+      <a href="../module_docs/lc-ims-ms_featdet/featdet_ion_mobility_trace_builder/ion-mobility-trace-builder.html" class="md-nav__link">
         
   
   
@@ -1946,7 +1948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/lc-ims-ms_featdet/recursive_ims_builder/recursive-ims-builder.html" class="md-nav__link">
+      <a href="../module_docs/lc-ims-ms_featdet/recursive_ims_builder/recursive-ims-builder.html" class="md-nav__link">
         
   
   
@@ -2029,7 +2031,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/imaging_featdet/featdet_image_builder/image-builder.html" class="md-nav__link">
+      <a href="../module_docs/imaging_featdet/featdet_image_builder/image-builder.html" class="md-nav__link">
         
   
   
@@ -2057,7 +2059,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/featdet_maldispotfeaturedetection/maldi_spot_feature_detection.html" class="md-nav__link">
+      <a href="../module_docs/featdet_maldispotfeaturedetection/maldi_spot_feature_detection.html" class="md-nav__link">
         
   
   
@@ -2140,7 +2142,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/mrm_mrmtoscans/mrm-to-scans.html" class="md-nav__link">
+      <a href="../module_docs/mrm_mrmtoscans/mrm-to-scans.html" class="md-nav__link">
         
   
   
@@ -2168,7 +2170,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/mrm_setquant/mrm-set-quant-mass.html" class="md-nav__link">
+      <a href="../module_docs/mrm_setquant/mrm-set-quant-mass.html" class="md-nav__link">
         
   
   
@@ -2204,7 +2206,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/featdet_smoothing/smoothing.html" class="md-nav__link">
+      <a href="../module_docs/featdet_smoothing/smoothing.html" class="md-nav__link">
         
   
   
@@ -2232,7 +2234,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/uv/uv_baseline_correction/uv_baseline_correction.html" class="md-nav__link">
+      <a href="../module_docs/uv/uv_baseline_correction/uv_baseline_correction.html" class="md-nav__link">
         
   
   
@@ -2307,7 +2309,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/featdet_resolver_local_minimum/local-minimum-resolver.html" class="md-nav__link">
+      <a href="../module_docs/featdet_resolver_local_minimum/local-minimum-resolver.html" class="md-nav__link">
         
   
   
@@ -2335,7 +2337,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/featdet_resolver_wavelet/wavelet_resolver.html" class="md-nav__link">
+      <a href="../module_docs/featdet_resolver_wavelet/wavelet_resolver.html" class="md-nav__link">
         
   
   
@@ -2363,7 +2365,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/featdet_resolver_baseline/baseline-resolver.html" class="md-nav__link">
+      <a href="../module_docs/featdet_resolver_baseline/baseline-resolver.html" class="md-nav__link">
         
   
   
@@ -2391,7 +2393,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/featdet_resolver_noise_ampl/noise-ampl-resolver.html" class="md-nav__link">
+      <a href="../module_docs/featdet_resolver_noise_ampl/noise-ampl-resolver.html" class="md-nav__link">
         
   
   
@@ -2419,7 +2421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/featdet_resolver_savitzky-golay/savitzky-golay-resolver.html" class="md-nav__link">
+      <a href="../module_docs/featdet_resolver_savitzky-golay/savitzky-golay-resolver.html" class="md-nav__link">
         
   
   
@@ -2502,7 +2504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/featdet_spectraldeconvolutiongc/spectraldeconvolutiongc.html" class="md-nav__link">
+      <a href="../module_docs/featdet_spectraldeconvolutiongc/spectraldeconvolutiongc.html" class="md-nav__link">
         
   
   
@@ -2538,7 +2540,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/id_ccs_calibration/ccs_calibration.html" class="md-nav__link">
+      <a href="../module_docs/id_ccs_calibration/ccs_calibration.html" class="md-nav__link">
         
   
   
@@ -2566,7 +2568,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/featdet_ms2_scan_pairing/ms2_scan_pairing.html" class="md-nav__link">
+      <a href="../module_docs/featdet_ms2_scan_pairing/ms2_scan_pairing.html" class="md-nav__link">
         
   
   
@@ -2594,7 +2596,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/featdet_ms2_scan_pairing/ms2_maldi_scan_pairing.html" class="md-nav__link">
+      <a href="../module_docs/featdet_ms2_scan_pairing/ms2_maldi_scan_pairing.html" class="md-nav__link">
         
   
   
@@ -2622,7 +2624,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/filter_diams2/dia_pseudo_ms2_builder.html" class="md-nav__link">
+      <a href="../module_docs/filter_diams2/dia_pseudo_ms2_builder.html" class="md-nav__link">
         
   
   
@@ -2650,7 +2652,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/filter_ims_msms_refinement/ims_ms2_refinement.html" class="md-nav__link">
+      <a href="../module_docs/filter_ims_msms_refinement/ims_ms2_refinement.html" class="md-nav__link">
         
   
   
@@ -2678,7 +2680,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/feat_ms2_similarity_intra/intra_row_ms2_similarity.html" class="md-nav__link">
+      <a href="../module_docs/feat_ms2_similarity_intra/intra_row_ms2_similarity.html" class="md-nav__link">
         
   
   
@@ -2753,7 +2755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/filter_isotope_filter/isotope_filter.html" class="md-nav__link">
+      <a href="../module_docs/filter_isotope_filter/isotope_filter.html" class="md-nav__link">
         
   
   
@@ -2781,7 +2783,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/filter_isotope_finder/isotope_finder.html" class="md-nav__link">
+      <a href="../module_docs/filter_isotope_finder/isotope_finder.html" class="md-nav__link">
         
   
   
@@ -2809,7 +2811,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/filter_isotope_peak_scanner/isotope_peak_scanner.html" class="md-nav__link">
+      <a href="../module_docs/filter_isotope_peak_scanner/isotope_peak_scanner.html" class="md-nav__link">
         
   
   
@@ -2892,7 +2894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/id_ion_networking/metacorr/metacorr.html" class="md-nav__link">
+      <a href="../module_docs/id_ion_networking/metacorr/metacorr.html" class="md-nav__link">
         
   
   
@@ -2920,7 +2922,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/id_ion_networking/iin/iin.html" class="md-nav__link">
+      <a href="../module_docs/id_ion_networking/iin/iin.html" class="md-nav__link">
         
   
   
@@ -2948,7 +2950,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/group_compound_grouping/compound_grouping.html" class="md-nav__link">
+      <a href="../module_docs/group_compound_grouping/compound_grouping.html" class="md-nav__link">
         
   
   
@@ -2976,7 +2978,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/group_compound_grouping/config_compound_representations.html" class="md-nav__link">
+      <a href="../module_docs/group_compound_grouping/config_compound_representations.html" class="md-nav__link">
         
   
   
@@ -3004,7 +3006,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/group_spectral_net/molecular_networking.html" class="md-nav__link">
+      <a href="../module_docs/group_spectral_net/molecular_networking.html" class="md-nav__link">
         
   
   
@@ -3087,7 +3089,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/filter_duplicate_features/duplicate_feature_filter.html" class="md-nav__link">
+      <a href="../module_docs/filter_duplicate_features/duplicate_feature_filter.html" class="md-nav__link">
         
   
   
@@ -3115,7 +3117,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/feature_list_row_filter/feature_list_rows_filter.html" class="md-nav__link">
+      <a href="../module_docs/feature_list_row_filter/feature_list_rows_filter.html" class="md-nav__link">
         
   
   
@@ -3143,7 +3145,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/feature_filter/feature_filter.html" class="md-nav__link">
+      <a href="../module_docs/feature_filter/feature_filter.html" class="md-nav__link">
         
   
   
@@ -3171,7 +3173,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/filter_peakcomparison_row_filter/filter_peakcomparison_row_filter.html" class="md-nav__link">
+      <a href="../module_docs/filter_peakcomparison_row_filter/filter_peakcomparison_row_filter.html" class="md-nav__link">
         
   
   
@@ -3199,7 +3201,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/filter_neutral_loss/filter_neutral_loss.html" class="md-nav__link">
+      <a href="../module_docs/filter_neutral_loss/filter_neutral_loss.html" class="md-nav__link">
         
   
   
@@ -3227,7 +3229,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/filter_mobilitymzregionextraction/filter_mobilitymzregionextraction.html" class="md-nav__link">
+      <a href="../module_docs/filter_mobilitymzregionextraction/filter_mobilitymzregionextraction.html" class="md-nav__link">
         
   
   
@@ -3255,7 +3257,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/filter_blanksubtraction/filter_chrom_blanksubtraction.html" class="md-nav__link">
+      <a href="../module_docs/filter_blanksubtraction/filter_chrom_blanksubtraction.html" class="md-nav__link">
         
   
   
@@ -3283,7 +3285,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/filter_blanksubtraction/filter_blanksubtraction.html" class="md-nav__link">
+      <a href="../module_docs/filter_blanksubtraction/filter_blanksubtraction.html" class="md-nav__link">
         
   
   
@@ -3311,7 +3313,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/filter_splitaligned/split_aligned_feature_list.html" class="md-nav__link">
+      <a href="../module_docs/filter_splitaligned/split_aligned_feature_list.html" class="md-nav__link">
         
   
   
@@ -3339,7 +3341,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/filter_clearannotations/clear_feature_annotations.html" class="md-nav__link">
+      <a href="../module_docs/filter_clearannotations/clear_feature_annotations.html" class="md-nav__link">
         
   
   
@@ -3367,7 +3369,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/filter_featurelistpreferences/feature_list_preferences.html" class="md-nav__link">
+      <a href="../module_docs/filter_featurelistpreferences/feature_list_preferences.html" class="md-nav__link">
         
   
   
@@ -3450,7 +3452,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/align_join_aligner/join_aligner.html" class="md-nav__link">
+      <a href="../module_docs/align_join_aligner/join_aligner.html" class="md-nav__link">
         
   
   
@@ -3478,7 +3480,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/align_merge_lists/align_merge_lists.html" class="md-nav__link">
+      <a href="../module_docs/align_merge_lists/align_merge_lists.html" class="md-nav__link">
         
   
   
@@ -3506,7 +3508,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/align_ransac/align_ransac.html" class="md-nav__link">
+      <a href="../module_docs/align_ransac/align_ransac.html" class="md-nav__link">
         
   
   
@@ -3534,7 +3536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/align_gcei/align_gc_ei.html" class="md-nav__link">
+      <a href="../module_docs/align_gcei/align_gc_ei.html" class="md-nav__link">
         
   
   
@@ -3562,7 +3564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/align_lc-image/align_lc-image.html" class="md-nav__link">
+      <a href="../module_docs/align_lc-image/align_lc-image.html" class="md-nav__link">
         
   
   
@@ -3590,7 +3592,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/align_mrm/mrm-aligner.html" class="md-nav__link">
+      <a href="../module_docs/align_mrm/mrm-aligner.html" class="md-nav__link">
         
   
   
@@ -3673,7 +3675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/gapfill_peak_finder/gap-filling.html" class="md-nav__link">
+      <a href="../module_docs/gapfill_peak_finder/gap-filling.html" class="md-nav__link">
         
   
   
@@ -3701,7 +3703,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/gapfill_same_mz_and_RT_range/same_mz_and_RT_range_gap_filler.html" class="md-nav__link">
+      <a href="../module_docs/gapfill_same_mz_and_RT_range/same_mz_and_RT_range_gap_filler.html" class="md-nav__link">
         
   
   
@@ -3784,7 +3786,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/norm_rt_calibration/norm_rt_calibration.html" class="md-nav__link">
+      <a href="../module_docs/norm_rt_calibration/norm_rt_calibration.html" class="md-nav__link">
         
   
   
@@ -3812,7 +3814,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/norm_rt_calibration_scans/scan-based-rt-corr.html" class="md-nav__link">
+      <a href="../module_docs/norm_rt_calibration_scans/scan-based-rt-corr.html" class="md-nav__link">
         
   
   
@@ -3840,7 +3842,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/norm_remove_scanrtcal/remove_scan_rt_correction.html" class="md-nav__link">
+      <a href="../module_docs/norm_remove_scanrtcal/remove_scan_rt_correction.html" class="md-nav__link">
         
   
   
@@ -3868,7 +3870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/norm_intensity/norm_intensity.html" class="md-nav__link">
+      <a href="../module_docs/norm_intensity/norm_intensity.html" class="md-nav__link">
         
   
   
@@ -3896,7 +3898,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/norm_stand_cmpd/norm_stand_cmpd.html" class="md-nav__link">
+      <a href="../module_docs/norm_stand_cmpd/norm_stand_cmpd.html" class="md-nav__link">
         
   
   
@@ -3924,7 +3926,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/norm_ri/norm_ri.html" class="md-nav__link">
+      <a href="../module_docs/norm_ri/norm_ri.html" class="md-nav__link">
         
   
   
@@ -4007,7 +4009,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/id_prec_local_cmpd_db/local-cmpd-db-search.html" class="md-nav__link">
+      <a href="../module_docs/id_prec_local_cmpd_db/local-cmpd-db-search.html" class="md-nav__link">
         
   
   
@@ -4035,7 +4037,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/id_biotransformer/biotransformer.html" class="md-nav__link">
+      <a href="../module_docs/id_biotransformer/biotransformer.html" class="md-nav__link">
         
   
   
@@ -4063,7 +4065,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/id_prec_local_spectra_lib/local-spectra-lib-search.html" class="md-nav__link">
+      <a href="../module_docs/id_prec_local_spectra_lib/local-spectra-lib-search.html" class="md-nav__link">
         
   
   
@@ -4091,7 +4093,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/id_addmanualcomp/manual-annotation.html" class="md-nav__link">
+      <a href="../module_docs/id_addmanualcomp/manual-annotation.html" class="md-nav__link">
         
   
   
@@ -4174,7 +4176,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/id_spectral_library_search/spectral_library_search.html" class="md-nav__link">
+      <a href="../module_docs/id_spectral_library_search/spectral_library_search.html" class="md-nav__link">
         
   
   
@@ -4202,7 +4204,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/id_spectral_library_analog_search/analog-spectral-library-search.html" class="md-nav__link">
+      <a href="../module_docs/id_spectral_library_analog_search/analog-spectral-library-search.html" class="md-nav__link">
         
   
   
@@ -4230,7 +4232,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/id_spectra_NIST/NIST-ms-search.html" class="md-nav__link">
+      <a href="../module_docs/id_spectra_NIST/NIST-ms-search.html" class="md-nav__link">
         
   
   
@@ -4258,7 +4260,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/id_spectra_chem_formula/chem-formula-pred.html" class="md-nav__link">
+      <a href="../module_docs/id_spectra_chem_formula/chem-formula-pred.html" class="md-nav__link">
         
   
   
@@ -4286,7 +4288,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/id_lipid_annotation/lipid-annotation.html" class="md-nav__link">
+      <a href="../module_docs/id_lipid_annotation/lipid-annotation.html" class="md-nav__link">
         
   
   
@@ -4314,7 +4316,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/id_ms2_similarity/ms2-similarity-search.html" class="md-nav__link">
+      <a href="../module_docs/id_ms2_similarity/ms2-similarity-search.html" class="md-nav__link">
         
   
   
@@ -4397,7 +4399,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/scan_selection/scan_selection.html" class="md-nav__link">
+      <a href="../module_docs/scan_selection/scan_selection.html" class="md-nav__link">
         
   
   
@@ -4425,7 +4427,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/filter_scan_merge_select/scan_merge_select.html" class="md-nav__link">
+      <a href="../module_docs/filter_scan_merge_select/scan_merge_select.html" class="md-nav__link">
         
   
   
@@ -4453,7 +4455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/align_join_aligner/spectra_similarity.html" class="md-nav__link">
+      <a href="../module_docs/align_join_aligner/spectra_similarity.html" class="md-nav__link">
         
   
   
@@ -4536,7 +4538,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/uv/uv_spectra_chromatogram_builder/spectrachrombuilder.html" class="md-nav__link">
+      <a href="../module_docs/uv/uv_spectra_chromatogram_builder/spectrachrombuilder.html" class="md-nav__link">
         
   
   
@@ -4564,7 +4566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/uv/uv_shift_trim_bin_traces/uv_shift_trim_bin_traces.html" class="md-nav__link">
+      <a href="../module_docs/uv/uv_shift_trim_bin_traces/uv_shift_trim_bin_traces.html" class="md-nav__link">
         
   
   
@@ -4592,7 +4594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/uv/uv_baseline_correction/uv_baseline_correction.html" class="md-nav__link">
+      <a href="../module_docs/uv/uv_baseline_correction/uv_baseline_correction.html" class="md-nav__link">
         
   
   
@@ -4620,7 +4622,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/uv/uv_resolve_traces/uv_local_min_resolver.html" class="md-nav__link">
+      <a href="../module_docs/uv/uv_resolve_traces/uv_local_min_resolver.html" class="md-nav__link">
         
   
   
@@ -4648,7 +4650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/uv/uv_ms_other_aligner/uv_ms_other_aligner.html" class="md-nav__link">
+      <a href="../module_docs/uv/uv_ms_other_aligner/uv_ms_other_aligner.html" class="md-nav__link">
         
   
   
@@ -4676,7 +4678,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/uv/uv_clear_correlated_traces/uv_clear_correlated_traces.html" class="md-nav__link">
+      <a href="../module_docs/uv/uv_clear_correlated_traces/uv_clear_correlated_traces.html" class="md-nav__link">
         
   
   
@@ -4766,7 +4768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../visualization_modules/visualization_overview/visualization-overview.html" class="md-nav__link">
+      <a href="../visualization_modules/visualization_overview/visualization-overview.html" class="md-nav__link">
         
   
   
@@ -4841,7 +4843,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../visualization_modules/raw_data_overview/raw_data_overview.html" class="md-nav__link">
+      <a href="../visualization_modules/raw_data_overview/raw_data_overview.html" class="md-nav__link">
         
   
   
@@ -4869,7 +4871,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../visualization_modules/raw_data_overview/raw_data_additional.html" class="md-nav__link">
+      <a href="../visualization_modules/raw_data_overview/raw_data_additional.html" class="md-nav__link">
         
   
   
@@ -4897,7 +4899,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../visualization_modules/intensity_map/intensity_map_visualizer.html" class="md-nav__link">
+      <a href="../visualization_modules/intensity_map/intensity_map_visualizer.html" class="md-nav__link">
         
   
   
@@ -4933,7 +4935,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../visualization_modules/ims_raw_data_overview/IM-data-visualisation.html" class="md-nav__link">
+      <a href="../visualization_modules/ims_raw_data_overview/IM-data-visualisation.html" class="md-nav__link">
         
   
   
@@ -4961,7 +4963,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../visualization_modules/image_raw_data/image_viewer.html" class="md-nav__link">
+      <a href="../visualization_modules/image_raw_data/image_viewer.html" class="md-nav__link">
         
   
   
@@ -4989,7 +4991,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/group_imagecorrelate/image-colocalization.html" class="md-nav__link">
+      <a href="../module_docs/group_imagecorrelate/image-colocalization.html" class="md-nav__link">
         
   
   
@@ -5064,7 +5066,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../visualization_modules/msmsplot/msms-plot.html" class="md-nav__link">
+      <a href="../visualization_modules/msmsplot/msms-plot.html" class="md-nav__link">
         
   
   
@@ -5092,7 +5094,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../visualization_modules/interactive_ion_id_netw/interactive_ion_id_netw.html" class="md-nav__link">
+      <a href="../visualization_modules/interactive_ion_id_netw/interactive_ion_id_netw.html" class="md-nav__link">
         
   
   
@@ -5120,7 +5122,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../visualization_modules/feature_histograms/feature_hist.html" class="md-nav__link">
+      <a href="../visualization_modules/feature_histograms/feature_hist.html" class="md-nav__link">
         
   
   
@@ -5148,7 +5150,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../visualization_modules/kendrickmass/kendrick_mass_plot.html" class="md-nav__link">
+      <a href="../visualization_modules/kendrickmass/kendrick_mass_plot.html" class="md-nav__link">
         
   
   
@@ -5176,7 +5178,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../visualization_modules/vankrevelen/van_krevelen_plot.html" class="md-nav__link">
+      <a href="../visualization_modules/vankrevelen/van_krevelen_plot.html" class="md-nav__link">
         
   
   
@@ -5204,7 +5206,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../visualization_modules/ecn_plots/ecn_plots.html" class="md-nav__link">
+      <a href="../visualization_modules/ecn_plots/ecn_plots.html" class="md-nav__link">
         
   
   
@@ -5232,7 +5234,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../visualization_modules/lipid_annotation_summary/lipid_annotation_summary.html" class="md-nav__link">
+      <a href="../visualization_modules/lipid_annotation_summary/lipid_annotation_summary.html" class="md-nav__link">
         
   
   
@@ -5260,7 +5262,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../visualization_modules/lipid_annotation_qc_dashboard/lipid_annotation_qc_dashboard.html" class="md-nav__link">
+      <a href="../visualization_modules/lipid_annotation_qc_dashboard/lipid_annotation_qc_dashboard.html" class="md-nav__link">
         
   
   
@@ -5288,7 +5290,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../visualization_modules/processed_additional/processed_additional.html" class="md-nav__link">
+      <a href="../visualization_modules/processed_additional/processed_additional.html" class="md-nav__link">
         
   
   
@@ -5324,7 +5326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../visualization_modules/massvoltammogram/massvoltammogram.html" class="md-nav__link">
+      <a href="../visualization_modules/massvoltammogram/massvoltammogram.html" class="md-nav__link">
         
   
   
@@ -5352,7 +5354,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../visualization_modules/statistics_dashboard/statistics_dashboard.html" class="md-nav__link">
+      <a href="../visualization_modules/statistics_dashboard/statistics_dashboard.html" class="md-nav__link">
         
   
   
@@ -5380,7 +5382,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/uv/uv_multi_detector_visualizer/uv_multi_detector_visualizer.html" class="md-nav__link">
+      <a href="../module_docs/uv/uv_multi_detector_visualizer/uv_multi_detector_visualizer.html" class="md-nav__link">
         
   
   
@@ -5408,7 +5410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/uv/uv_correlation_dashboard/uv_correlation_dashboard.html" class="md-nav__link">
+      <a href="../module_docs/uv/uv_correlation_dashboard/uv_correlation_dashboard.html" class="md-nav__link">
         
   
   
@@ -5490,7 +5492,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../workflows/lcmsworkflow/lcms-workflow.html" class="md-nav__link">
+      <a href="../workflows/lcmsworkflow/lcms-workflow.html" class="md-nav__link">
         
   
   
@@ -5518,7 +5520,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../workflows/imsworkflow/ion-mobility-data-processing-workflow.html" class="md-nav__link">
+      <a href="../workflows/imsworkflow/ion-mobility-data-processing-workflow.html" class="md-nav__link">
         
   
   
@@ -5546,7 +5548,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../workflows/gcmsworkflow/gcms-workflow.html" class="md-nav__link">
+      <a href="../workflows/gcmsworkflow/gcms-workflow.html" class="md-nav__link">
         
   
   
@@ -5574,7 +5576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../workflows/imagingworkflow/imaging-workflow.html" class="md-nav__link">
+      <a href="../workflows/imagingworkflow/imaging-workflow.html" class="md-nav__link">
         
   
   
@@ -5602,7 +5604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../workflows/batch_processing/batch-processing.html" class="md-nav__link">
+      <a href="../workflows/batch_processing/batch-processing.html" class="md-nav__link">
         
   
   
@@ -5630,7 +5632,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../workflows/librarygeneration/library_generation.html" class="md-nav__link">
+      <a href="../workflows/librarygeneration/library_generation.html" class="md-nav__link">
         
   
   
@@ -5658,7 +5660,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../workflows/simsef/simsef_workflow.html" class="md-nav__link">
+      <a href="../workflows/simsef/simsef_workflow.html" class="md-nav__link">
         
   
   
@@ -5686,7 +5688,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../workflows/mrmworkflow/mrm-workflow.html" class="md-nav__link">
+      <a href="../workflows/mrmworkflow/mrm-workflow.html" class="md-nav__link">
         
   
   
@@ -5714,7 +5716,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../workflows/optimization/workflow_optimization.html" class="md-nav__link">
+      <a href="../workflows/optimization/workflow_optimization.html" class="md-nav__link">
         
   
   
@@ -5742,7 +5744,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../workflows.html" class="md-nav__link">
+      <a href="workflows.html" class="md-nav__link">
         
   
   
@@ -5774,18 +5776,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16" checked>
         
           
           <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="0">
@@ -5795,7 +5799,7 @@
   <span class="md-ellipsis">
     
   
-    Agentic workflows
+    AI-assisted mzmine
   
 
     
@@ -5806,12 +5810,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_16">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Agentic workflows
+    AI-assisted mzmine
   
 
           </label>
@@ -5824,14 +5828,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../agent-assisted-mzmine.html" class="md-nav__link">
+      <a href="agent-assisted-mzmine.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Agent-assisted mzmine
+    Overview
   
 
     
@@ -5852,14 +5856,496 @@
   
   
     <li class="md-nav__item">
-      <a href="../scientific-analysis.html" class="md-nav__link">
+      <a href="mzassist-setup.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Scientific analysis
+    Set up mzassist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data sharing and agent controls
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="mzassist-data-sharing.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data sharing and agent controls
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-information-is-shared" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What information is shared?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#review-a-sharing-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Review a sharing request
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-or-correct-sample-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Add or correct sample metadata
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pause-cancel-revoke-or-disconnect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pause, cancel, revoke, or disconnect
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="mzassist-first-analysis.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Process your first dataset
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="mzassist-methods.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Build and improve a method
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="mzassist-results.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Explore and evaluate results
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_16_7" id="__nav_16_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scientific analyses
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_16_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Scientific analyses
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="scientific-analysis.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scientific analyses with mzassist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="analysis/quantification.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantification
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="analysis/batch-diagnostics.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Batch diagnostics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="analysis/study-comparison.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Study comparison
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="analysis/activity-association.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Activity association
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="analysis/exposure-calculation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exposure calculation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="mzassist-saving.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Save and reproduce your work
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="mzassist-troubleshooting.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
   
 
     
@@ -5934,7 +6420,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/tools_simsef/simsef.html" class="md-nav__link">
+      <a href="../module_docs/tools_simsef/simsef.html" class="md-nav__link">
         
   
   
@@ -5962,7 +6448,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/tools_spectral_library_to_feature_list/spectral_library_to_feature_list.html" class="md-nav__link">
+      <a href="../module_docs/tools_spectral_library_to_feature_list/spectral_library_to_feature_list.html" class="md-nav__link">
         
   
   
@@ -5990,7 +6476,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/batch_autosave/autosave_batch.html" class="md-nav__link">
+      <a href="../module_docs/batch_autosave/autosave_batch.html" class="md-nav__link">
         
   
   
@@ -6018,7 +6504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/wizard_optimizer/wizard_estimate.html" class="md-nav__link">
+      <a href="../module_docs/wizard_optimizer/wizard_estimate.html" class="md-nav__link">
         
   
   
@@ -6046,7 +6532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/wizard_optimizer/wizard_optimize.html" class="md-nav__link">
+      <a href="../module_docs/wizard_optimizer/wizard_optimize.html" class="md-nav__link">
         
   
   
@@ -6175,7 +6661,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../install_windows.html" class="md-nav__link">
+      <a href="../install_windows.html" class="md-nav__link">
         
   
   
@@ -6203,7 +6689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../install_linux.html" class="md-nav__link">
+      <a href="../install_linux.html" class="md-nav__link">
         
   
   
@@ -6231,7 +6717,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../install_macos.html" class="md-nav__link">
+      <a href="../install_macos.html" class="md-nav__link">
         
   
   
@@ -6267,7 +6753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../system_requirements.html" class="md-nav__link">
+      <a href="../system_requirements.html" class="md-nav__link">
         
   
   
@@ -6295,7 +6781,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../terminology/general-terminology.html" class="md-nav__link">
+      <a href="../terminology/general-terminology.html" class="md-nav__link">
         
   
   
@@ -6323,7 +6809,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../terminology/ion-mobility-terminology.html" class="md-nav__link">
+      <a href="../terminology/ion-mobility-terminology.html" class="md-nav__link">
         
   
   
@@ -6351,7 +6837,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../workflows/imsworkflow/lc-ms-and-lc-ims-ms-data-comparison.html" class="md-nav__link">
+      <a href="../workflows/imsworkflow/lc-ms-and-lc-ims-ms-data-comparison.html" class="md-nav__link">
         
   
   
@@ -6379,7 +6865,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../terminology/annotations.html" class="md-nav__link">
+      <a href="../terminology/annotations.html" class="md-nav__link">
         
   
   
@@ -6407,7 +6893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ions/ions.html" class="md-nav__link">
+      <a href="../ions/ions.html" class="md-nav__link">
         
   
   
@@ -6435,7 +6921,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/id_spectral_library_search/spectral-similarity-measures.html" class="md-nav__link">
+      <a href="../module_docs/id_spectral_library_search/spectral-similarity-measures.html" class="md-nav__link">
         
   
   
@@ -6463,7 +6949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../module_docs/uv/otherdetector_glossary.html" class="md-nav__link">
+      <a href="../module_docs/uv/otherdetector_glossary.html" class="md-nav__link">
         
   
   
@@ -6491,7 +6977,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../additional_resources.html" class="md-nav__link">
+      <a href="../additional_resources.html" class="md-nav__link">
         
   
   
@@ -6526,7 +7012,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../index.html" class="md-nav__link">
+      <a href="index.html" class="md-nav__link">
         
   
   
@@ -6647,7 +7133,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../coding/general_structure.html" class="md-nav__link">
+      <a href="../coding/general_structure.html" class="md-nav__link">
         
   
   
@@ -6675,7 +7161,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../contribute_intellij.html" class="md-nav__link">
+      <a href="../contribute_intellij.html" class="md-nav__link">
         
   
   
@@ -6703,7 +7189,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../coding/upgrade_jdk_version.html" class="md-nav__link">
+      <a href="../coding/upgrade_jdk_version.html" class="md-nav__link">
         
   
   
@@ -6731,7 +7217,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../coding/module_development.html" class="md-nav__link">
+      <a href="../coding/module_development.html" class="md-nav__link">
         
   
   
@@ -6759,7 +7245,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../coding/module_list.html" class="md-nav__link">
+      <a href="../coding/module_list.html" class="md-nav__link">
         
   
   
@@ -6795,7 +7281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../contribute.html" class="md-nav__link">
+      <a href="../contribute.html" class="md-nav__link">
         
   
   
@@ -6823,7 +7309,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../contribute_docu_template.html" class="md-nav__link">
+      <a href="../contribute_docu_template.html" class="md-nav__link">
         
   
   
@@ -6858,7 +7344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../wikiacknowledgements.html" class="md-nav__link">
+      <a href="../wikiacknowledgements.html" class="md-nav__link">
         
   
   
@@ -6885,7 +7371,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../troubleshooting.html" class="md-nav__link">
+      <a href="../troubleshooting.html" class="md-nav__link">
         
   
   
@@ -6912,7 +7398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../changelog.html" class="md-nav__link">
+      <a href="../changelog.html" class="md-nav__link">
         
   
   
@@ -6939,7 +7425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../workshops.html" class="md-nav__link">
+      <a href="../workshops.html" class="md-nav__link">
         
   
   
@@ -6986,10 +7472,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#inputs-and-prerequisites" class="md-nav__link">
+  <a href="#what-information-is-shared" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Inputs and prerequisites
+        What information is shared?
       
     </span>
   </a>
@@ -6997,10 +7483,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#parameters-and-validation" class="md-nav__link">
+  <a href="#review-a-sharing-request" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Parameters and validation
+        Review a sharing request
       
     </span>
   </a>
@@ -7008,10 +7494,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#processing-behavior" class="md-nav__link">
+  <a href="#add-or-correct-sample-metadata" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Processing behavior
+        Add or correct sample metadata
       
     </span>
   </a>
@@ -7019,63 +7505,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#outputs-and-side-effects" class="md-nav__link">
+  <a href="#pause-cancel-revoke-or-disconnect" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Outputs and side effects
+        Pause, cancel, revoke, or disconnect
       
     </span>
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#edge-cases-and-errors" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Edge cases and errors
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#worked-examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Worked examples
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Worked examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#default-correction" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Default correction
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#preserving-a-raw-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Preserving a raw source
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -7099,23 +7535,150 @@
   
 
 
-<h1 id="other-detector-baseline-correction-implementation-reference">Other-detector baseline correction: implementation reference<a class="headerlink" href="#other-detector-baseline-correction-implementation-reference" title="Permanent link">&para;</a></h1>
-<p>This module baseline-corrects selected other-detector traces; see the <a href="../../module_docs/uv/uv_baseline_correction/uv_baseline_correction.html">user guide</a>.</p>
-<h2 id="inputs-and-prerequisites">Inputs and prerequisites<a class="headerlink" href="#inputs-and-prerequisites" title="Permanent link">&para;</a></h2>
-<p>Select raw data files and raw or preprocessed traces. The default selection is preprocessed UV traces. The selected algorithm's nested settings are part of the parameter state.</p>
-<h2 id="parameters-and-validation">Parameters and validation<a class="headerlink" href="#parameters-and-validation" title="Permanent link">&para;</a></h2>
-<p><strong>Suffix</strong> defaults to <code>bl</code>; it is retained as a parameter but is not used to rename the stored traces by this task. <strong>Baseline corrector</strong> offers LOESS, Polynomial, Spline, and arPLS, defaulting to <strong>arPLS</strong>. Algorithm-specific validation and settings come from the selected corrector.</p>
-<h2 id="processing-behavior">Processing behavior<a class="headerlink" href="#processing-behavior" title="Permanent link">&para;</a></h2>
-<p>For each selected trace, the chosen corrector produces a corrected time series and a derived feature is made from it. The task uses a fresh corrector instance for each selected other-data collection. It then replaces that collection's preprocessed traces with the corrected results.</p>
-<h2 id="outputs-and-side-effects">Outputs and side effects<a class="headerlink" href="#outputs-and-side-effects" title="Permanent link">&para;</a></h2>
-<p>Corrected results intentionally replace the preprocessed traces, whether the selected input was raw or preprocessed. Raw traces remain unchanged. The output is not a new raw-data file or feature list: it is the current preprocessed trace set for each matched collection. Subsequent feature resolution therefore sees the corrected, replacement preprocessed data.</p>
-<h2 id="edge-cases-and-errors">Edge cases and errors<a class="headerlink" href="#edge-cases-and-errors" title="Permanent link">&para;</a></h2>
-<p>Selecting no matching collections performs no correction. The <code>Suffix</code> does not create a parallel named trace collection in this implementation, so it should not be treated as a preservation mechanism.</p>
-<h2 id="worked-examples">Worked examples<a class="headerlink" href="#worked-examples" title="Permanent link">&para;</a></h2>
-<h3 id="default-correction">Default correction<a class="headerlink" href="#default-correction" title="Permanent link">&para;</a></h3>
-<p>Running with the untouched dialog uses arPLS on the default preprocessed UV traces and replaces those preprocessed traces with their corrected derivatives.</p>
-<h3 id="preserving-a-raw-source">Preserving a raw source<a class="headerlink" href="#preserving-a-raw-source" title="Permanent link">&para;</a></h3>
-<p>Selecting a raw trace does not overwrite the raw trace: the corrected derivative is stored as preprocessed data, allowing the raw signal to remain selectable later.</p>
+<h1 id="data-sharing-and-agent-controls">Data sharing and agent controls<a class="headerlink" href="#data-sharing-and-agent-controls" title="Permanent link">&para;</a></h1>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 15.61 19.59 17l-5.01-5 5.01-5L21 8.39 17.44 12zM3 6h13v2H3zm0 7v-2h10v2zm0 5v-2h13v2z"/></svg></span> <strong>mzassist → Agent activity</strong></p>
+<p>mzmine performs processing and calculations locally. The information returned to your assistant
+can be sent to its model provider. Decide what to share based on the analytical task and your
+laboratory's policy.</p>
+<h2 id="what-information-is-shared">What information is shared?<a class="headerlink" href="#what-information-is-shared" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Information</th>
+<th>What happens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Raw data files and project archive</td>
+<td>mzassist does not upload the complete files or project through the normal processing workflow. Selected signals or results can be shared separately.</td>
+</tr>
+<tr>
+<td>File and folder paths</td>
+<td>Choose them in mzmine to keep the selection local. Text pasted into chat is visible to the assistant/provider.</td>
+</tr>
+<tr>
+<td>Connection and project summaries</td>
+<td>mzassist returns operational information such as available tasks, file counts, and counts of sample roles so the assistant can plan the next step.</td>
+</tr>
+<tr>
+<td>Feature-table names and counts</td>
+<td>The connected assistant can discover these to select a table. Avoid confidential information in table names.</td>
+</tr>
+<tr>
+<td>Sample metadata</td>
+<td>Sharing requires approval. Review the columns and values, including free text that may identify samples or contain paths.</td>
+</tr>
+<tr>
+<td>Acquisition metadata</td>
+<td>Optional, read-only file-header summaries. The native review starts with this option unchecked. A chat approval can include the summary when mzassist asks for it. Header text may contain sensitive information.</td>
+</tr>
+<tr>
+<td>Measured results and annotations</td>
+<td>Approve a selected feature table before the assistant reads its measurements, annotations, compound memberships, processing methods, sample roles, and selected grouping values. Group labels can identify a study even when sample names are not shared.</td>
+</tr>
+<tr>
+<td>Sample names, metadata column titles, chromatograms, spectra, plot images, and run order</td>
+<td>Additional choices in result sharing. They are selected initially in the mzmine review; clear any that are unnecessary before approval.</td>
+</tr>
+<tr>
+<td>Anything you type, paste, or attach in chat</td>
+<td>Already shared with that assistant under its own data-handling rules, independently of mzmine's sharing controls.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="review-a-sharing-request">Review a sharing request<a class="headerlink" href="#review-a-sharing-request" title="Permanent link">&para;</a></h2>
+<p>Start by describing your task in chat, for example: “Help me inspect the final feature table from
+the last processing run.” mzassist checks which tables are available and asks you to clarify if
+more than one could fit. When it needs metadata or measurements that you have not already approved
+for sharing, it prepares a request explaining the table or files and the information to be shared.</p>
+<p>Respond to that request in chat: approve it, decline it, or reply “Open the sharing review in mzmine
+so I can inspect it first.” mzassist opens that review for you. You do not need to select a feature
+table or find a sharing control in mzmine before asking for help.</p>
+<p><strong>Optional manual route:</strong> a sharing entry appears in <strong>mzassist → Agent activity</strong> only after
+mzassist has prepared the request. While the request is still current, select its row in the
+activity history. The details and available action for that row appear under <strong>Selected activity</strong>:</p>
+<ul>
+<li>For a <strong>Metadata sharing</strong> row, click <strong>Inspect metadata in mzmine</strong> or <strong>Review metadata sharing</strong>,
+  according to the action shown. Select the columns you want to share and inspect their values.
+  <strong>Share selected metadata</strong> confirms that selection.</li>
+<li>For a <strong>Share results</strong> row, click <strong>Inspect in mzmine</strong> or <strong>Open review</strong>. Check the feature
+  table and additional sharing choices, then use <strong>Share results</strong> to approve them.</li>
+</ul>
+<p>The action follows the selected row and its current state. If it is no longer available, ask
+mzassist in chat to prepare a new request for the task. After approval, a metadata entry offers
+<strong>Revoke metadata sharing</strong>; a result entry is renamed <strong>Shared results</strong> and offers <strong>Revoke sharing</strong>.
+The revocation effects are explained under <a href="#pause-cancel-revoke-or-disconnect">Pause, cancel, revoke, or disconnect</a>.</p>
+<p>A metadata approval in chat can cover all current columns and, when requested, acquisition-header
+summaries. It is available for a preview of up to 32 columns and less than 200 kB. Larger requests
+need to be narrowed or reviewed in mzmine. Use that review when you want to select fewer columns or inspect
+their contents privately before deciding.</p>
+<p>Sample metadata describes your study. <strong>Acquisition metadata</strong> describes information recorded in
+file headers and is not edited by sample-metadata changes. Neither table establishes the study
+design by itself: verify sample roles, conditions, and replicates.</p>
+<p>Result sharing is separate from metadata sharing. Check the selected feature table and optional
+information before approving it. If the table, project, or relevant metadata changes, a new
+sharing review may be required so the assistant works from the correct data.</p>
+<h2 id="add-or-correct-sample-metadata">Add or correct sample metadata<a class="headerlink" href="#add-or-correct-sample-metadata" title="Permanent link">&para;</a></h2>
+<p>You can ask mzassist to add sample information or correct values in mzmine's Sample metadata table.
+For example, supply a missing sample role or explain which injections belong to the same sample.
+The assistant can edit shared columns and propose new columns for the selected files.</p>
+<p>Sharing permission allows mzassist to read the approved information; it does not itself request a
+metadata change. mzassist shows proposed before-and-after values and asks before applying them,
+unless you have delegated metadata completion. You can instead inspect the proposal in chat or in
+mzmine. Check inferred labels and replicate assignments against your sample records; a filename does
+not establish biological meaning. These changes affect Sample metadata, not the acquisition
+information recorded in the raw file.</p>
+<h2 id="pause-cancel-revoke-or-disconnect">Pause, cancel, revoke, or disconnect<a class="headerlink" href="#pause-cancel-revoke-or-disconnect" title="Permanent link">&para;</a></h2>
+<p>You can request a pause, cancellation or sharing revocation in chat. The manual controls below are in
+<strong>mzassist → Agent activity</strong> in mzmine.</p>
+<table>
+<thead>
+<tr>
+<th>What you want</th>
+<th>In chat</th>
+<th>Manual control and effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Take over editing</td>
+<td>“Pause agent changes while I inspect the method.”</td>
+<td>Click <strong>Pause agent changes</strong>. New changes and jobs, including metadata edits and new result-sharing requests or approvals, are blocked. Submitted mzmine tasks continue and previously shared results remain readable. You can still inspect status, request metadata sharing, keep a request private, or revoke sharing. Click <strong>Resume agent changes</strong> when ready.</td>
+</tr>
+<tr>
+<td>Stop processing</td>
+<td>“Cancel the current processing job.”</td>
+<td>Ask mzassist to cancel the specific job. Pausing or disconnecting is not a substitute for cancellation; completed outputs remain.</td>
+</tr>
+<tr>
+<td>End metadata sharing</td>
+<td>“Revoke metadata sharing.”</td>
+<td>Select a <strong>Metadata sharing</strong> history row, then click <strong>Revoke metadata sharing</strong> under <strong>Selected activity</strong>. This ends <strong>all metadata sharing for the connection</strong>, including other metadata reviews, and marks still-pending metadata requests as kept local.</td>
+</tr>
+<tr>
+<td>End result sharing</td>
+<td>“Stop sharing this feature table.”</td>
+<td>Select its <strong>Shared results</strong> history row, then click <strong>Revoke sharing</strong> under <strong>Selected activity</strong>.</td>
+</tr>
+<tr>
+<td>Disable local access</td>
+<td>Use the manual control in mzmine.</td>
+<td>Click <strong>Disconnect</strong>. This clears sharing approvals and pending reviews, and cancels jobs still waiting for file selection or approval. Submitted mzmine processing may continue; result-analysis tasks managed by the connection are canceled.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Disconnect</strong> is temporary. The connection is enabled automatically on startup by default, and
+can also be enabled again after a login or license refresh. To keep it off, clear <strong>Enable local
+connection when mzmine starts</strong> in <strong>mzassist → Agent activity</strong>, then click <strong>Disconnect</strong>.</p>
+<p>After manual editing, resume agent changes when ready and ask the assistant to inspect the current
+method. Do not assume it can reuse a proposal made before your edits.</p>
+<p>Revoking access or disconnecting cannot remove information already returned to a chat service.
+Follow that provider's controls for conversation history and retention. A local mzmine installation
+does not determine the provider's data-use policy.</p>
+<p>Continue with <a href="mzassist-first-analysis.html">Process your first dataset</a>, or ask mzassist to help
+<a href="mzassist-results.html">explore an existing result</a>.</p>
+<p><span class='git-page-authors git-authors'><a href='mailto:jonas.luebke@mzio.io'>Jonas Lübke</a></span></p>
 
 
 
@@ -7136,7 +7699,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="October 28, 2026 07:29:31 UTC">October 28, 2026 07:29:31</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="November 11, 2026 16:01:24 UTC">November 11, 2026 16:01:24</span>
   </span>
 
     
@@ -7205,12 +7768,12 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "default": "latest", "provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "default": "latest", "provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      <script src="../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
-        <script src="../../javascripts/mathjax.js"></script>
+        <script src="../javascripts/mathjax.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
